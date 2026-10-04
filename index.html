@@ -16,8 +16,8 @@ a:focus-visible{outline:3px solid #fff;outline-offset:-3px}
 .top{display:flex;justify-content:space-between;align-items:center;gap:12px 20px;flex-wrap:wrap;padding:16px 20px;max-width:1200px;margin:0 auto}
 .mark{font-weight:900;font-stretch:125%;font-size:18px;text-decoration:none;letter-spacing:-.02em}
 nav{display:flex;gap:18px;font-size:15px;flex-wrap:wrap}
-.hero{max-width:1200px;margin:0 auto;padding:24px 20px 40px}
-:0 0 16px;font-size:clamp(48px,13vw,150px);font-weight:900;font-stretch:118%;line-height:.86;letter-spacing:-.045em}
+.hero{max-width:1200px;margin:0 auto;padding:24px 20px 40px;text-align:center}
+h1{margin:0 0 16px;font-size:clamp(52px,13vw,168px);font-weight:900;font-stretch:118%;line-height:.86;letter-spacing:-.045em}
 .hero p{margin:0;font-size:clamp(18px,2.4vw,24px);color:var(--muted)}
 .track{background:var(--track);border-top:6px solid #fff;border-bottom:6px solid #fff}
 .lane{display:grid;grid-template-columns:clamp(64px,14vw,170px) minmax(0,1fr) auto;align-items:center;gap:0 clamp(12px,3vw,40px);padding:clamp(20px,4vw,44px) 20px;border-bottom:4px solid #fff;text-decoration:none;color:#fff;position:relative;overflow:hidden;max-width:none}
@@ -35,14 +35,16 @@ nav{display:flex;gap:18px;font-size:15px;flex-wrap:wrap}
 .go{font-weight:800;border:3px solid currentColor;padding:10px 16px;white-space:nowrap}
 @media (max-width:640px){.lane{grid-template-columns:64px minmax(0,1fr)}.go{grid-column:2;justify-self:start;margin-top:12px}}
 footer{max-width:1200px;margin:0 auto;padding:24px 20px 48px;font-size:14px;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){.lane::before{transition:none}}.logo{max-width:500px;width:100%;height:auto;margin:0 auto 40px;display:block}@media (max-width:640px){.logo{max-width:300px}}</style>
+@media (prefers-reduced-motion:reduce){.lane::before{transition:none}}
+.logo{max-width:500px;width:100%;height:auto;margin:0 auto 40px;display:block}
+@media (max-width:640px){.logo{max-width:300px}}</style>
 </head>
 <body>
 <p class="notice">Concept prototype for a campaign pitch. This is not an official Nike website, and the runs shown are not live events.</p>
 <header class="top"><a class="mark" href="index.html">Own The Mile</a><nav><a href="london.html">London</a><a href="new-york.html">New York</a><a href="los-angeles.html">Los Angeles</a><a href="qr-codes.html">QR Codes</a></nav></header>
 <main>
 <section class="hero"><img src="logo-horizontal.png" alt="Own The Mile Logo" class="logo"><h1>Your CITY.<br>Your ROUTE.<br>Your MILE.</h1><p>Free weekly runs for every pace. Pick a lane.</p></section>
-<section class="hero" style="text-align:center"><img src="logo-horizontal.png" alt="Own The Mile Logo" class="logo"><h1 style="font-size:clamp(52px,13vw,168px);margin-left:auto;margin-right:auto">Your CITY.<br>Your ROUTE.<br>Your MILE.</h1><p>Free weekly runs for every pace. Pick a lane.</p></section>
+<section class="track" id="crews"><a class="lane" href="london.html" style="--c:#e1251b;--oc:#fff"><span class="num">1</span><span class="info"><span class="where">London · South Bank</span><span class="name">Bridge to Bridge</span><span class="when">Wednesdays, 6:45 pm · 5.3 mi or 3.1 mi</span></span><span class="go">Go to the run</span></a><a class="lane" href="new-york.html" style="--c:#ffcc00;--oc:#111"><span class="num">2</span><span class="info"><span class="where">New York City · Central Park</span><span class="name">The Park Five</span><span class="when">Saturdays, 8:00 am · 5.0 mi or 3.2 mi</span></span><span class="go">Go to the run</span></a><a class="lane" href="los-angeles.html" style="--c:#e6176a;--oc:#fff"><span class="num">3</span><span class="info"><span class="where">Los Angeles · Westside</span><span class="name">Pier to Pier</span><span class="when">Sundays, 7:30 am · 5.4 mi or 3.0 mi</span></span><span class="go">Go to the run</span></a></section>
 </main>
 <footer><p>Concept prototype. Not affiliated with, endorsed by or operated by Nike, Inc.</p></footer>
 </body>
