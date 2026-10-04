@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" data-city="london">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bridge to Bridge | Own The Mile London</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>:root{--bg:#0b1a2f;--ink:#f1ebdd;--muted:#a3b3cb;--accent:#e1251b;--on-accent:#ffffff;--accent2:#e0b04f;--panel:#12284a;--line:#2f4a73;--hero:#0b1a2f;--hero-ink:#f1ebdd;--m-land:#162d50;--m-water:#07101f;--m-park:#1c4a3c;--m-lawn:#1c4a3c;--m-beach:#162d50;--m-street:#24406b;--m-bridge:#c9c2b2;--m-label:#9fb3d1;--m-route:#6f84a8;--m-prog:#ff4136;--m-case:#07101f;--display:"Oswald","Arial Narrow",Impact,sans-serif;--body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;--h1-style:normal;--h1-case:uppercase;--h1-track:.01em;--h1-weight:700;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.notice{margin:0;padding:8px 20px;background:#ffc107;color:#15110f;font-size:13px;font-weight:600;text-align:center}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:20px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px 20px;flex-wrap:wrap;padding:14px 20px;background:var(--hero);color:var(--hero-ink)}
+.mark{font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);font-size:22px;text-decoration:none}
+nav{display:flex;gap:16px;font-size:15px;flex-wrap:wrap}
+.hero{position:relative;background:var(--hero);color:var(--hero-ink);overflow:hidden}
+.art{position:absolute;left:0;right:0;bottom:34px;width:100%;height:clamp(110px,22vw,220px);display:block}
+.hero-in{position:relative;padding-block:clamp(28px,6vw,72px) clamp(96px,16vw,170px)}
+.crew{margin:0 0 6px;font-weight:700;font-size:16px}
+[data-city="london"] .crew{color:var(--accent2)}
+[data-city="nyc"] .crew{display:inline-block;background:var(--accent);color:var(--on-accent);padding:2px 10px}
+[data-city="nyc"] .hero{border-top:4px solid #fff}
+[data-city="la"] .crew{color:#fff}
+h1{margin:0 0 14px;font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);letter-spacing:var(--h1-track);font-size:clamp(60px,15vw,190px);line-height:.86;text-wrap:balance}
+[data-city="nyc"] h1{font-stretch:118%;font-size:clamp(50px,12.5vw,160px)}
+[data-city="la"] h1{text-shadow:.04em .04em 0 #fff}
+.headline{margin:0;font-size:clamp(20px,2.6vw,28px);font-weight:600;max-width:26ch}
+.vibe{margin:8px 0 0;font-size:16px;opacity:.85}
+.lanes{position:relative;display:grid;grid-template-columns:repeat(8,1fr);background:var(--accent);color:var(--on-accent);border-top:3px solid var(--hero-ink)}
+.lanes span{font-family:var(--display);font-weight:700;font-size:15px;padding:4px 10px;border-left:2px solid var(--on-accent)}
+.lanes span:first-child{border-left:0}
+main{display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);padding-block:28px 56px}
+h2{margin:0 0 12px;font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);letter-spacing:var(--h1-track);font-size:clamp(34px,5vw,56px);line-height:.95}
+h3{margin:0 0 8px;font-size:18px}
+.sub{margin:0 0 14px;color:var(--muted)}
+.board{margin:0;display:flex;flex-wrap:wrap;gap:2px;background:var(--line);border:2px solid var(--line)}
+.board div{flex:1 1 140px;background:var(--panel);padding:12px 14px;min-width:0}
+dt{font-size:13px;color:var(--muted)}
+dd{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.05;font-variant-numeric:tabular-nums}
+.board.small dd{font-size:26px}
+.run-head{display:flex;justify-content:space-between;align-items:end;gap:12px 24px;flex-wrap:wrap;margin-bottom:14px}
+.run-head h2{margin:0}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{padding:9px 14px;font-weight:700;font-size:15px;background:var(--panel);border:2px solid var(--line);border-radius:999px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.run-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:940px){.run-grid{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}.stepcol{display:flex;flex-direction:column;max-height:calc(clamp(380px,64vh,660px) + 150px)}.steps{overflow-y:auto;flex:1}}
+.mapbox{position:relative;height:clamp(380px,64vh,660px);border:2px solid var(--line);background:var(--m-land);overflow:hidden}
+#map{display:block;width:100%;height:100%;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.drag{cursor:grabbing}
+.land{fill:var(--m-land)}.water{fill:var(--m-water)}.park{fill:var(--m-park)}.lawn{fill:var(--m-lawn)}.beach{fill:var(--m-beach)}
+.street,.road,.bridge,.pier{fill:none;stroke:var(--m-street);stroke-linecap:round}
+.road{stroke-dasharray:none;opacity:.7}.bridge,.pier{stroke:var(--m-bridge)}
+.glabel text{fill:var(--m-label);font-family:var(--body);font-size:13px;font-weight:600;paint-order:stroke;stroke:var(--m-land);stroke-width:3px}
+.glabel.major text{font-size:14px;font-weight:700;letter-spacing:.04em}
+.glabel.water-l text{font-style:italic;stroke:var(--m-water)}
+.far .glabel.minor,.far .pin text,.far .mile{display:none}
+.rt{fill:none;stroke-linejoin:round;stroke-linecap:round}
+.rt.ghost{stroke:var(--m-route);opacity:.35}
+.rt.casing{stroke:var(--m-case)}.rt.base{stroke:var(--m-route)}.rt.prog{stroke:var(--m-prog)}
+[data-city="london"] .rt.base{stroke:#8ea3c6}
+.mile circle{fill:var(--panel);stroke:var(--m-route);stroke-width:2}
+.mile text{font-family:var(--display);font-size:11px;font-weight:700;fill:var(--ink);text-anchor:middle}
+.pin{cursor:pointer}
+.pin circle{fill:var(--accent2);stroke:#fff;stroke-width:2.5}
+.pin.on circle{fill:var(--accent)}
+.pin text{font-family:var(--body);font-size:12.5px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--m-land);stroke-width:3.5px}
+.pin.on text{display:block!important}
+.startmk rect{fill:var(--ink)}.startmk text{fill:var(--bg);font-family:var(--display);font-size:10px;font-weight:700;text-anchor:middle}
+.runner .halo{fill:var(--m-prog);opacity:.3;animation:pulse 1.4s ease-out infinite}
+.runner .dot{fill:var(--m-prog);stroke:#fff;stroke-width:3}
+@keyframes pulse{from{transform:scale(.6);opacity:.5}to{transform:scale(1.7);opacity:0}}
+.zoom{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:4px}
+.zoom button{width:40px;height:40px;font-size:22px;line-height:1;font-weight:700;background:var(--panel);border:2px solid var(--line);color:var(--ink)}
+.card{position:absolute;left:10px;right:10px;bottom:10px;max-width:420px;background:var(--panel);border:2px solid var(--ink);padding:12px 44px 12px 14px;box-shadow:6px 6px 0 var(--accent)}
+.card h3{margin:0 0 4px;font-family:var(--display);font-size:24px;line-height:1}
+.card p{margin:0 0 6px;font-size:15px}
+.card-mi{font-weight:700;color:var(--accent2);font-size:13px!important}
+.x{position:absolute;top:4px;right:4px;width:36px;height:36px;border:0;background:none;font-size:24px}
+.link{border:0;background:none;padding:0;text-decoration:underline;font-weight:700;font-size:15px}
+.player{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 14px;align-items:center;padding:12px;border:2px solid var(--line);border-top:0;background:var(--panel)}
+.hud{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}
+.hud .wide{grid-column:1/-1}
+.k{display:block;font-size:12px;color:var(--muted)}
+.v{display:block;font-family:var(--display);font-weight:700;font-size:clamp(21px,5.6vw,30px);line-height:1.05;font-variant-numeric:tabular-nums}
+.v.sm{font-size:19px}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+.btn{display:inline-block;text-align:center;padding:12px 18px;background:var(--accent);color:var(--on-accent);border:2px solid var(--accent);font-weight:800;text-decoration:none;font-size:16px}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.play{min-width:150px}
+.steps{list-style:none;margin:0;padding:0;border-top:2px solid var(--line)}
+.steps button{display:grid;grid-template-columns:62px minmax(0,1fr);gap:10px;width:100%;text-align:left;padding:10px 8px;background:none;border:0;border-bottom:1px solid var(--line);font-size:15.5px}
+.steps button:hover{background:var(--panel)}
+.steps .on{background:var(--accent);color:var(--on-accent)}
+.steps .on .mi{color:inherit}
+.mi{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{padding:8px 14px;background:var(--panel);border:2px solid var(--line);border-radius:999px;font-weight:600;font-size:15px}
+.chips button[aria-pressed="true"]{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.big{margin:0 0 6px;font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,38px);line-height:1.1;max-width:30ch}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.actions .btn{flex:1 1 200px}
+details{border-top:2px solid var(--line);padding:12px 0}
+details:last-child{border-bottom:2px solid var(--line)}
+summary{font-weight:700;font-size:18px;cursor:pointer}
+details p{margin:8px 0 0;max-width:62ch;color:var(--muted)}
+footer{padding-block:24px 48px;border-top:2px solid var(--line);font-size:14px;color:var(--muted)}
+footer p{margin:0 0 8px}
+footer a{margin-right:12px}
+@media (prefers-reduced-motion:reduce){.runner .halo{animation:none}}
+[data-city="la"] .top{background:#ff6a4d}
+</style>
+</head>
+<body>
+<p class="notice">Concept prototype for a campaign pitch. This is not an official Nike website, and the runs shown are not live events.</p>
+<header class="top"><a class="mark" href="index.html">Own The Mile</a><nav><a href="london.html">London</a><a href="new-york.html">New York</a><a href="los-angeles.html">Los Angeles</a></nav></header>
+<section class="hero">
+<svg class="art" viewBox="0 0 1200 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><path d="M40 170 A80 96 0 0 1 200 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="40" cy="52" r="5" fill="var(--accent2)"/><path d="M200 170 A80 96 0 0 1 360 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="200" cy="52" r="5" fill="var(--accent2)"/><path d="M360 170 A80 96 0 0 1 520 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="360" cy="52" r="5" fill="var(--accent2)"/><path d="M520 170 A80 96 0 0 1 680 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="520" cy="52" r="5" fill="var(--accent2)"/><path d="M680 170 A80 96 0 0 1 840 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="680" cy="52" r="5" fill="var(--accent2)"/><path d="M840 170 A80 96 0 0 1 1000 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="840" cy="52" r="5" fill="var(--accent2)"/><path d="M1000 170 A80 96 0 0 1 1160 170" fill="none" stroke="var(--line)" stroke-width="10"/><circle cx="1000" cy="52" r="5" fill="var(--accent2)"/><rect x="0" y="62" width="1200" height="12" fill="var(--line)"/><rect x="0" y="58" width="1200" height="3" fill="var(--accent)"/></svg>
+<div class="wrap hero-in">
+<p class="crew">Nike Run Crew · South Bank</p>
+<h1>Bridge to Bridge</h1>
+<p class="headline">Westminster to Tower. Every mile is yours.</p>
+<p class="vibe">Wednesday night. Lights on the river.</p>
+</div>
+<div class="lanes" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+</section>
+<main class="wrap">
+<dl class="board">
+<div><dt>Day</dt><dd>Wednesdays</dd></div>
+<div><dt>Meet</dt><dd>6:45 pm</dd></div>
+<div><dt>Full route</dt><dd>5.3 mi</dd></div>
+<div><dt>Short route</dt><dd>3.1 mi</dd></div>
+<div><dt>Cost</dt><dd>Free</dd></div>
+</dl>
+<section class="run">
+<div class="run-head"><h2>Run the route</h2>
+<div class="seg" role="group" aria-label="Choose a route"><button type="button" data-route="full" aria-pressed="true">Bridge to Bridge · 5.3 mi</button><button type="button" data-route="short" aria-pressed="false">Bridge to Bridge 5K · 3.1 mi</button></div></div>
+<div class="run-grid">
+<div class="mapcol">
+<div class="mapbox">
+<svg id="map" role="img" aria-label="Interactive map of the route. Drag to move, pinch or scroll to zoom."></svg>
+<div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zfit" aria-label="Show the whole route">⤢</button></div>
+<div class="card" id="card" hidden><button type="button" class="x" id="card-x" aria-label="Close">×</button><p class="card-mi" id="card-mi"></p><h3 id="card-n"></h3><p id="card-b"></p><button type="button" class="link" id="card-go">Put the runner here</button></div>
+</div>
+<div class="player">
+<button type="button" class="btn play" id="play">Start the run</button>
+<input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Position along the route">
+<div class="hud"><div><span class="k">Distance</span><span class="v" id="rd-dist">0.00 mi</span></div><div><span class="k">Clock</span><span class="v" id="rd-time">0:00</span></div><div class="wide"><span class="k">Next up</span><span class="v sm" id="rd-next"></span></div></div>
+</div>
+</div>
+<div class="stepcol"><h3>Turn by turn</h3><ol class="steps" id="steps"></ol></div>
+</div>
+</section>
+<section class="pace">
+<h2>Set your pace</h2>
+<p class="sub">Slide to your easy pace. The clock on the map uses it too.</p>
+<input type="range" id="pace" min="360" max="900" step="15" value="600" aria-label="Pace in minutes per mile">
+<dl class="board small"><div><dt>Pace</dt><dd id="p-mi"></dd></div><div><dt>Per km</dt><dd id="p-km"></dd></div><div><dt>Bridge to Bridge</dt><dd id="p-full"></dd></div><div><dt>Bridge to Bridge 5K</dt><dd id="p-short"></dd></div></dl>
+</section>
+<section>
+<h2>Landmarks on the way</h2>
+<p class="sub">Tap one to find it on the map.</p>
+<div class="chips" id="chips"></div>
+</section>
+<section class="meet">
+<h2>Where we meet</h2>
+<p class="big">Riverside terrace outside Tate Modern, at the foot of Millennium Bridge, Bankside SE1</p>
+<p class="sub">Wednesdays, 6:45 pm (run leaves 7:00 pm). 15 minutes of stretching and coffee on the terrace; mile test sign-up table.</p>
+<div class="actions">
+<button type="button" class="btn" id="cal">Add to my calendar</button>
+<a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=51.5081,-0.0985" target="_blank" rel="noopener">Open in Google Maps</a>
+<button type="button" class="btn alt" id="gpx">Download route (GPX)</button>
+<button type="button" class="btn alt" id="share">Share this run</button>
+</div>
+</section>
+<section class="expect">
+<h2>What to expect</h2>
+<details open><summary>Do I need to sign up?</summary><p>No. Just turn up. Logging the run in the Nike Run Club app is welcome and never required.</p></details>
+<details><summary>How fast is it?</summary><p>Every pace is welcome. A coach leads and two pacers run with the group, one at the back.</p></details>
+<details><summary>What happens after?</summary><p>We spend 15 minutes stretching and having coffee at the meeting point.</p></details>
+<details><summary>Can I try shoes?</summary><p>Yes. The Mile Test table is open after the run. Run in a pair for up to 30 days and return them worn for a full refund.</p></details>
+<details><summary>Do my miles count?</summary><p>Miles you log count towards your next Mile Pass tier.</p></details>
+<details><summary>Will there be photos?</summary><p>A photographer joins one run a month. Ask a pacer for an opt-out wristband if you'd rather not appear.</p></details>
+</section>
+</main>
+<footer class="wrap"><p>Other crews: <a href="london.html">London</a><a href="new-york.html">New York</a><a href="los-angeles.html">Los Angeles</a></p><p>Concept prototype. Not affiliated with, endorsed by or operated by Nike, Inc. Routes are drafts and have not been checked on the ground. The map is a stylised drawing, not a street map.</p></footer>
+<script>window.CITY={"key":"london","city":"London","center":[51.5069411764706,-0.10123529411764708],"zoom":900,"far":4.2,"geo":{"shapes":[{"t":"poly","c":"water","pts":[[51.4965,-0.1262],[51.501,-0.1238],[51.502,-0.1236],[51.507,-0.122],[51.5085,-0.1203],[51.51,-0.1175],[51.5108,-0.114],[51.511,-0.1045],[51.5102,-0.0985],[51.5096,-0.094],[51.5092,-0.0905],[51.509,-0.0875],[51.5087,-0.084],[51.5076,-0.079],[51.5072,-0.0748],[51.5062,-0.066],[51.5028,-0.066],[51.504,-0.0762],[51.505,-0.079],[51.5063,-0.0815],[51.5062,-0.084],[51.5064,-0.088],[51.507,-0.0905],[51.5077,-0.094],[51.5081,-0.0985],[51.5083,-0.1043],[51.5084,-0.1085],[51.508,-0.1105],[51.5075,-0.114],[51.5068,-0.116],[51.506,-0.119],[51.5033,-0.1196],[51.5008,-0.1196],[51.4965,-0.121]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5008,-0.1196],[51.501,-0.1238]]},{"t":"line","c":"bridge","w":5,"pts":[[51.506,-0.119],[51.507,-0.122]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5068,-0.116],[51.51,-0.1175]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5083,-0.1043],[51.511,-0.1045]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5081,-0.0985],[51.5102,-0.0985]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5077,-0.094],[51.5096,-0.094]]},{"t":"line","c":"bridge","w":5,"pts":[[51.5064,-0.088],[51.509,-0.0875]]},{"t":"line","c":"bridge","w":5,"pts":[[51.504,-0.0762],[51.5072,-0.0748]]}],"labels":[{"t":"River Thames","p":[51.5094,-0.109],"c":"major water-l"},{"t":"South Bank","p":[51.5045,-0.1135],"c":"major"},{"t":"Westminster","p":[51.504,-0.1275],"c":"major"},{"t":"City of London","p":[51.5128,-0.09],"c":"major"},{"t":"Bankside","p":[51.5058,-0.0985],"c":"major"},{"t":"Bermondsey","p":[51.502,-0.08],"c":"major"},{"t":"Westminster Br","p":[51.5009,-0.1217],"c":"minor"},{"t":"Jubilee Brs","p":[51.5065,-0.1205],"c":"minor"},{"t":"Waterloo Br","p":[51.508399999999995,-0.11674999999999999],"c":"minor"},{"t":"Blackfriars Br","p":[51.50965,-0.10439999999999999],"c":"minor"},{"t":"Millennium Br","p":[51.50915,-0.0985],"c":"minor"},{"t":"Southwark Br","p":[51.50865,-0.094],"c":"minor"},{"t":"London Br","p":[51.5077,-0.08775],"c":"minor"},{"t":"Tower Br","p":[51.5056,-0.07550000000000001],"c":"minor"}]},"routes":{"full":{"name":"Bridge to Bridge","mi":5.3,"km":8.6,"pts":[[51.5081,-0.0985,"Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head west on the Thames Path (river on your right)"],[51.5083,-0.1043,"Pass under Blackfriars Bridge"],[51.5084,-0.1085,"OXO Tower Wharf"],[51.508,-0.1105,"Gabriel's Wharf"],[51.5075,-0.114,"National Theatre"],[51.5068,-0.116,"Pass under Waterloo Bridge (BFI Southbank)"],[51.506,-0.119,"Royal Festival Hall; pass under Golden Jubilee Bridges"],[51.5033,-0.1196,"London Eye"],[51.502,-0.1195,"County Hall"],[51.5008,-0.1196,"Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben"],[51.501,-0.1238,"North end of Westminster Bridge. Turn right onto Victoria Embankment (river on your right)"],[51.502,-0.1236,"Westminster Pier"],[51.507,-0.122,"Embankment station / Golden Jubilee Bridges"],[51.5085,-0.1203,"Cleopatra's Needle"],[51.51,-0.1175,"Pass under Waterloo Bridge"],[51.5108,-0.114,"Temple / Somerset House"],[51.511,-0.1045,"Blackfriars Bridge underpass. Continue east on Paul's Walk"],[51.5102,-0.0985,"North end of Millennium Bridge (St Paul's on your left). 5K runners turn right here; full route continues straight"],[51.5096,-0.094,"Pass under Southwark Bridge"],[51.5092,-0.0905,"Cannon Street rail bridge (Thames Path steps inland briefly here)"],[51.509,-0.0875,"Pass under London Bridge"],[51.5087,-0.084,"Old Billingsgate"],[51.5076,-0.079,"Tower of London riverside walk"],[51.5072,-0.0748,"Steps up to Tower Bridge. Turn right and cross the bridge"],[51.504,-0.0762,"South end of Tower Bridge. Turn right down to the riverside (Potters Fields Park)"],[51.505,-0.079,"Potters Fields / The Queen's Walk, heading west"],[51.5063,-0.0815,"HMS Belfast"],[51.5062,-0.084,"Hay's Galleria"],[51.5064,-0.088,"London Bridge (pass under or cross Tooley St side)"],[51.5062,-0.0898,"Southwark Cathedral / Borough Market"],[51.507,-0.0905,"Golden Hinde, Clink Street"],[51.5077,-0.094,"Pass under Southwark Bridge"],[51.5081,-0.097,"Shakespeare's Globe"],[51.5081,-0.0985,"Finish: Tate Modern riverside terrace"]]},"short":{"name":"Bridge to Bridge 5K","mi":3.1,"km":5.1,"pts":[[51.5081,-0.0985,"Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head west on the Thames Path (river on your right)"],[51.5083,-0.1043,"Pass under Blackfriars Bridge"],[51.5084,-0.1085,"OXO Tower Wharf"],[51.508,-0.1105,"Gabriel's Wharf"],[51.5075,-0.114,"National Theatre"],[51.5068,-0.116,"Pass under Waterloo Bridge (BFI Southbank)"],[51.506,-0.119,"Royal Festival Hall; pass under Golden Jubilee Bridges"],[51.5033,-0.1196,"London Eye"],[51.502,-0.1195,"County Hall"],[51.5008,-0.1196,"Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben"],[51.501,-0.1238,"North end of Westminster Bridge. Turn right onto Victoria Embankment (river on your right)"],[51.502,-0.1236,"Westminster Pier"],[51.507,-0.122,"Embankment station / Golden Jubilee Bridges"],[51.5085,-0.1203,"Cleopatra's Needle"],[51.51,-0.1175,"Pass under Waterloo Bridge"],[51.5108,-0.114,"Temple / Somerset House"],[51.511,-0.1045,"Blackfriars Bridge underpass. Continue east on Paul's Walk"],[51.5102,-0.0985,"North end of Millennium Bridge (St Paul's on your left). Turn right onto the bridge"],[51.5092,-0.0985,"Cross Millennium Bridge heading south"],[51.5081,-0.0985,"Finish: Tate Modern riverside terrace"]]}},"landmarks":[{"n":"Tate Modern","p":[51.5081,-0.0985],"b":"Start and finish. The old Bankside Power Station, now a free modern art museum. The crew meets on the riverside terrace."},{"n":"London Eye","p":[51.5033,-0.1196],"b":"The 135-metre observation wheel. The path narrows here, so run single file past the queue."},{"n":"Westminster Bridge","p":[51.5009,-0.1217],"b":"The first crossing. Big Ben and the Houses of Parliament are straight ahead as you run over."},{"n":"Cleopatra's Needle","p":[51.5085,-0.1203],"b":"An ancient Egyptian obelisk on Victoria Embankment, guarded by two bronze sphinxes."},{"n":"Somerset House","p":[51.5108,-0.114],"b":"The long neoclassical river front above the Embankment. Roughly the halfway point of the 5K."},{"n":"Millennium Bridge","p":[51.5102,-0.0985],"b":"The 5K turns onto this footbridge and runs straight back to Tate Modern. St Paul's dome is right behind you."},{"n":"Tower of London","p":[51.5076,-0.079],"b":"Nearly a thousand years old. The riverside walk runs between the fortress wall and the Thames."},{"n":"Tower Bridge","p":[51.5056,-0.0755],"b":"The far turn. Climb the steps, cross between the towers and drop down to the south bank."},{"n":"HMS Belfast","p":[51.5063,-0.0815],"b":"A Second World War cruiser moored on the south bank, now a museum ship."},{"n":"Borough Market","p":[51.5062,-0.0898],"b":"One of London's oldest food markets. The last mile starts here."}],"ics":"BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Own The Mile concept//EN\r\nBEGIN:VEVENT\r\nUID:own-the-mile-london@concept\r\nDTSTAMP:20261004T180000Z\r\nDTSTART;TZID=Europe/London:20261007T184500\r\nDURATION:PT1H30M\r\nRRULE:FREQ=WEEKLY;BYDAY=WE\r\nSUMMARY:Own The Mile: Bridge to Bridge (concept)\r\nLOCATION:Riverside terrace outside Tate Modern\\, at the foot of Millennium Bridge\\, Bankside SE1\r\nDESCRIPTION:Nike Run Crew \u00b7 South Bank. Every pace welcome.\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"};</script>
+<script>(function(){
+var D=window.CITY,NS='http://www.w3.org/2000/svg',svg=document.getElementById('map');
+function $(i){return document.getElementById(i)}
+var Cc=Math.cos(D.center[0]*Math.PI/180),K=111320;
+function P(p){return [(p[1]-D.center[1])*Cc*K,-(p[0]-D.center[0])*K]}
+function mk(n,a,par){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e}
+function dstr(xy){return xy.map(function(p,i){return (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)}).join('')}
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var gGeo=mk('g',{},svg),gRt=mk('g',{},svg),gLab=mk('g',{},svg),gMi=mk('g',{},svg),gPin=mk('g',{},svg),gRun=mk('g',{},svg);
+var widths=[],scaled=[];
+function place(g,x,y){var o={g:g,x:x,y:y};scaled.push(o);return o}
+mk('rect',{x:-60000,y:-60000,width:120000,height:120000,'class':'land'},gGeo);
+D.geo.shapes.forEach(function(s){var e=mk('path',{d:dstr(s.pts.map(P))+(s.t==='poly'?'Z':''),'class':s.c},gGeo);if(s.w)widths.push([e,s.w])});
+D.geo.labels.forEach(function(l){var p=P(l.p),g=mk('g',{'class':'glabel '+(l.c||'')},gLab);mk('text',{'text-anchor':'middle',y:4},g).textContent=l.t;place(g,p[0],p[1])});
+var R={};
+['full','short'].forEach(function(k){var r=D.routes[k],xy=r.pts.map(P),cum=[0];
+ for(var i=1;i<xy.length;i++)cum.push(cum[i-1]+Math.hypot(xy[i][0]-xy[i-1][0],xy[i][1]-xy[i-1][1]));
+ R[k]={xy:xy,cum:cum,total:cum[cum.length-1],r:r,ghost:mk('path',{d:dstr(xy),'class':'rt ghost'},gRt)}});
+var casing=mk('path',{'class':'rt casing'},gRt),base=mk('path',{'class':'rt base'},gRt),prog=mk('path',{'class':'rt prog'},gRt);
+widths.push([casing,11],[base,6],[prog,6]);
+var sp=R.full.xy[0],sg=mk('g',{'class':'startmk'},gPin);mk('rect',{x:-13,y:-30,width:26,height:16},sg);mk('text',{y:-18},sg).textContent='GO';mk('rect',{x:-1.5,y:-16,width:3,height:16},sg);place(sg,sp[0],sp[1]);
+var pins=D.landmarks.map(function(l,i){var p=P(l.p),g=mk('g',{'class':'pin'},gPin);mk('circle',{r:16,fill:'transparent',stroke:'none',style:'fill:transparent;stroke:none'},g);mk('circle',{r:8},g);mk('text',{x:13,y:4},g).textContent=l.n;place(g,p[0],p[1]);
+ g.addEventListener('click',function(){if(moved<6)select(i)});return {g:g,xy:p}});
+var rg=mk('g',{'class':'runner'},gRun);mk('circle',{r:13,'class':'halo'},rg);mk('circle',{r:8,'class':'dot'},rg);var runner=place(rg,sp[0],sp[1]);
+var active='full',d=0,playing=false,follow=false,pace=600,L=0,sel=-1,miles=[];
+var v={cx:0,cy:0,w:1000},home=null,fly=0;
+function size(){return [svg.clientWidth||600,svg.clientHeight||400]}
+function apply(){var s=size(),h=v.w*s[1]/s[0],u=v.w/s[0];svg.setAttribute('viewBox',(v.cx-v.w/2)+' '+(v.cy-h/2)+' '+v.w+' '+h);
+ widths.forEach(function(w){w[0].setAttribute('stroke-width',w[1]*u)});
+ ['full','short'].forEach(function(k){R[k].ghost.setAttribute('stroke-width',3*u);R[k].ghost.setAttribute('stroke-dasharray',(7*u)+' '+(7*u))});
+ scaled.forEach(function(o){o.g.setAttribute('transform','translate('+o.x+' '+o.y+') scale('+u+')')});
+ svg.classList.toggle('far',u>D.far)}
+function fitView(){var xy=R[active].xy,xs=xy.map(function(p){return p[0]}),ys=xy.map(function(p){return p[1]}),s=size();
+ var x0=Math.min.apply(0,xs),x1=Math.max.apply(0,xs),y0=Math.min.apply(0,ys),y1=Math.max.apply(0,ys);
+ return {cx:(x0+x1)/2,cy:(y0+y1)/2,w:Math.max((x1-x0),(y1-y0)*s[0]/s[1])*1.3}}
+function clampW(w){var max=(home?home.w:20000)*2.2;return Math.max(160,Math.min(max,w))}
+function flyTo(t,ms){var id=++fly,a={cx:v.cx,cy:v.cy,w:v.w},t0=performance.now();t.w=clampW(t.w);
+ if(reduce||!ms){v=t;apply();return}
+ (function step(now){if(id!==fly)return;var q=Math.min(1,(now-t0)/ms),e=q<.5?2*q*q:1-Math.pow(-2*q+2,2)/2;
+  v={cx:a.cx+(t.cx-a.cx)*e,cy:a.cy+(t.cy-a.cy)*e,w:a.w+(t.w-a.w)*e};apply();if(q<1)requestAnimationFrame(step)})(t0)}
+function pointAt(k,dist){var r=R[k],c=r.cum,i=1;dist=Math.max(0,Math.min(r.total,dist));while(i<c.length-1&&c[i]<dist)i++;
+ var seg=c[i]-c[i-1]||1,f=(dist-c[i-1])/seg,a=r.xy[i-1],b=r.xy[i];return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f]}
+function miOf(dist){return dist/R[active].total*R[active].r.mi}
+function nearest(k,p){var r=R[k],best=1e12,bd=0;for(var i=1;i<r.xy.length;i++){var a=r.xy[i-1],b=r.xy[i],dx=b[0]-a[0],dy=b[1]-a[1],l2=dx*dx+dy*dy||1,
+ t=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/l2)),q=[a[0]+dx*t,a[1]+dy*t],dd=Math.hypot(p[0]-q[0],p[1]-q[1]);
+ if(dd<best-1){best=dd;bd=r.cum[i-1]+Math.sqrt(l2)*t}}return {off:best,d:bd}}
+function clock(sec){sec=Math.round(sec);var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return (h?h+':'+(m<10?'0':''):'')+m+':'+(s<10?'0':'')+s}
+var stepEls=[],lmPos=[];
+function setRoute(k){active=k;var r=R[k],ds=dstr(r.xy);[casing,base,prog].forEach(function(e){e.setAttribute('d',ds)});
+ L=prog.getTotalLength();prog.setAttribute('stroke-dasharray',L+' '+L);
+ document.querySelectorAll('.seg button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.route===k))});
+ miles.forEach(function(o){gMi.removeChild(o.g);scaled.splice(scaled.indexOf(o),1)});miles=[];
+ for(var m=1;m<r.r.mi-0.15;m++){var p=pointAt(k,m/r.r.mi*r.total),g=mk('g',{'class':'mile'},gMi);mk('circle',{r:9},g);mk('text',{y:4},g).textContent=m;miles.push(place(g,p[0],p[1]))}
+ var ol=$('steps');ol.innerHTML='';stepEls=r.r.pts.map(function(pt,i){var li=document.createElement('li'),b=document.createElement('button');b.type='button';
+  b.innerHTML='<span class="mi"></span><span></span>';b.firstChild.textContent=miOf(r.cum[i]).toFixed(1)+' mi';b.lastChild.textContent=pt[2];
+  b.addEventListener('click',function(){pause();d=r.cum[i];follow=false;update();flyTo({cx:r.xy[i][0],cy:r.xy[i][1],w:D.zoom},500)});li.appendChild(b);ol.appendChild(li);return b});
+ lmPos=pins.map(function(pn){return nearest(k,pn.xy)});
+ d=0;pause();home=fitView();flyTo({cx:home.cx,cy:home.cy,w:home.w},400);update();paceOut()}
+var lastStep=-1;
+function update(){var r=R[active],p=pointAt(active,d);runner.x=p[0];runner.y=p[1];
+ prog.setAttribute('stroke-dashoffset',L*(1-d/r.total));
+ $('scrub').value=Math.round(d/r.total*1000);
+ var mi=miOf(d);$('rd-dist').textContent=mi.toFixed(2)+' mi · '+(mi*1.609344).toFixed(1)+' km';$('rd-time').textContent=clock(mi*pace);
+ var nx=null;lmPos.forEach(function(o,i){if(o.off<260&&o.d>d+5&&(!nx||o.d<lmPos[nx].d))nx=i});
+ $('rd-next').textContent=d>=r.total-1?'Finished. Coffee is on the crew.':nx===null?'The finish, '+(r.r.mi-mi).toFixed(1)+' mi to go':D.landmarks[nx].n+' in '+(miOf(lmPos[nx].d)-mi).toFixed(1)+' mi';
+ var si=0;for(var i=0;i<r.cum.length;i++)if(r.cum[i]<=d+1)si=i;
+ if(si!==lastStep){stepEls.forEach(function(b,i){b.classList.toggle('on',i===si)});lastStep=si;var b=stepEls[si],ol=$('steps');
+  if(b&&ol.scrollHeight>ol.clientHeight+4)ol.scrollTop=b.offsetTop-ol.offsetTop-ol.clientHeight/3}
+ if(follow){v.cx+=(p[0]-v.cx)*(reduce?1:.14);v.cy+=(p[1]-v.cy)*(reduce?1:.14)}
+ apply()}
+var lastT=0,DUR=48;
+function tick(now){if(!playing)return;var dt=Math.min(.1,(now-lastT)/1000);lastT=now;d+=R[active].total/DUR*dt;
+ if(d>=R[active].total){d=R[active].total;playing=false;follow=false;$('play').textContent='Run it again';update();flyTo({cx:home.cx,cy:home.cy,w:home.w},900);return}
+ update();requestAnimationFrame(tick)}
+function pause(){playing=false;lastStep=-1;$('play').textContent=d>0&&d<R[active].total?'Keep running':'Start the run'}
+$('play').addEventListener('click',function(){if(playing){pause();return}if(d>=R[active].total-1)d=0;playing=true;follow=true;$('play').textContent='Pause';
+ var p=pointAt(active,d);fly++;v.w=clampW(Math.min(home.w,D.zoom*1.5));v.cx=p[0];v.cy=p[1];lastT=performance.now();requestAnimationFrame(tick)});
+$('scrub').addEventListener('input',function(){pause();d=this.value/1000*R[active].total;follow=true;fly++;update();follow=false;pause()});
+document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){closeCard();setRoute(b.dataset.route)})});
+function select(i){sel=i;var l=D.landmarks[i],o=lmPos[i];pins.forEach(function(p,j){p.g.classList.toggle('on',j===i)});
+ document.querySelectorAll('#chips button').forEach(function(b,j){b.setAttribute('aria-pressed',String(j===i))});
+ $('card-n').textContent=l.n;$('card-b').textContent=l.b;$('card-mi').textContent=o.off<260?'Mile '+miOf(o.d).toFixed(1)+' of '+R[active].r.name:'Not on this route. Switch routes to run past it.';
+ $('card-go').hidden=o.off>=260;$('card').hidden=false;follow=false;flyTo({cx:pins[i].xy[0],cy:pins[i].xy[1]+v.w*0,w:D.zoom},600)}
+function closeCard(){sel=-1;$('card').hidden=true;pins.forEach(function(p){p.g.classList.remove('on')});document.querySelectorAll('#chips button').forEach(function(b){b.setAttribute('aria-pressed','false')})}
+$('card-x').addEventListener('click',closeCard);
+$('card-go').addEventListener('click',function(){if(sel<0)return;pause();d=lmPos[sel].d;update();pause()});
+D.landmarks.forEach(function(l,i){var b=document.createElement('button');b.type='button';b.textContent=l.n;b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){select(i);var box=document.querySelector('.mapbox').getBoundingClientRect();if(box.top<0||box.bottom>innerHeight)document.querySelector('.run').scrollIntoView({behavior:reduce?'auto':'smooth'})});$('chips').appendChild(b)});
+function zoomAt(f,cx,cy){var s=size(),b=svg.getBoundingClientRect(),u=v.w/s[0],h=v.w*s[1]/s[0],wx=v.cx-v.w/2+(cx-b.left)*u,wy=v.cy-h/2+(cy-b.top)*u,nw=clampW(v.w*f),k=nw/v.w;
+ v={cx:wx+(v.cx-wx)*k,cy:wy+(v.cy-wy)*k,w:nw};apply()}
+function mid(){var b=svg.getBoundingClientRect();return [b.left+b.width/2,b.top+b.height/2]}
+$('zin').addEventListener('click',function(){fly++;var m=mid();zoomAt(.6,m[0],m[1])});
+$('zout').addEventListener('click',function(){fly++;var m=mid();zoomAt(1/.6,m[0],m[1])});
+$('zfit').addEventListener('click',function(){follow=false;home=fitView();flyTo({cx:home.cx,cy:home.cy,w:home.w},500)});
+svg.addEventListener('wheel',function(e){e.preventDefault();fly++;follow=false;zoomAt(Math.exp(e.deltaY*.0016),e.clientX,e.clientY)},{passive:false});
+var ptr={},moved=0,pd=0;
+function count(){return Object.keys(ptr).length}
+svg.addEventListener('pointerdown',function(e){ptr[e.pointerId]=[e.clientX,e.clientY];moved=0;fly++;svg.classList.add('drag');pd=0});
+window.addEventListener('pointermove',function(e){if(!ptr[e.pointerId])return;var o=ptr[e.pointerId],dx=e.clientX-o[0],dy=e.clientY-o[1],u=v.w/size()[0];
+ if(count()===1){moved+=Math.abs(dx)+Math.abs(dy);if(moved>=6)follow=false;v.cx-=dx*u;v.cy-=dy*u;ptr[e.pointerId]=[e.clientX,e.clientY];apply()}
+ else{ptr[e.pointerId]=[e.clientX,e.clientY];var k=Object.keys(ptr),a=ptr[k[0]],b=ptr[k[1]],dist=Math.hypot(a[0]-b[0],a[1]-b[1]);follow=false;moved=99;
+  if(pd)zoomAt(pd/dist,(a[0]+b[0])/2,(a[1]+b[1])/2);pd=dist}});
+function up(e){delete ptr[e.pointerId];pd=0;if(!count())svg.classList.remove('drag')}
+window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up);
+window.addEventListener('resize',function(){home=fitView();apply()});
+function paceOut(){$('p-mi').textContent=clock(pace)+' /mi';$('p-km').textContent=clock(pace/1.609344)+' /km';$('p-full').textContent=clock(pace*D.routes.full.mi);$('p-short').textContent=clock(pace*D.routes.short.mi)}
+$('pace').addEventListener('input',function(){pace=+this.value;paceOut();update()});
+function save(name,type,text){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},2000)}
+$('cal').addEventListener('click',function(){save('own-the-mile-'+D.key+'.ics','text/calendar',D.ics)});
+$('gpx').addEventListener('click',function(){var r=D.routes[active],x='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Own The Mile concept" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><desc>Draft route. Check it on the ground before you rely on it.</desc></metadata>\n<trk><name>'+r.name.replace(/&/g,'&amp;')+'</name><trkseg>\n'+r.pts.map(function(p){return '<trkpt lat="'+p[0]+'" lon="'+p[1]+'"/>'}).join('\n')+'\n</trkseg></trk></gpx>\n';
+ save('own-the-mile-'+D.key+'-'+active+'.gpx','application/gpx+xml',x)});
+$('share').addEventListener('click',function(){var b=this,t=b.textContent,url=location.href;function done(m){b.textContent=m;setTimeout(function(){b.textContent=t},1800)}
+ if(navigator.share){navigator.share({title:document.title,url:url}).catch(function(){})}
+ else if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){done('Link copied')},function(){done('Copy the address bar link')})}
+ else done('Copy the address bar link')});
+setRoute('full');
+})();
+</script>
+</body>
+</html>

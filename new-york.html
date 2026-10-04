@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en" data-city="nyc">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Park Five | Own The Mile New York City</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap">
+<style>:root{--bg:#f3f2ee;--ink:#111111;--muted:#55554f;--accent:#ffcc00;--on-accent:#111111;--accent2:#1f7a3d;--panel:#ffffff;--line:#111111;--hero:#111111;--hero-ink:#ffffff;--sky:#2b2b2b;--m-land:#e6e5df;--m-water:#9cc8ea;--m-park:#b9dcb6;--m-lawn:#cfe8c5;--m-beach:#e6e5df;--m-street:#ffffff;--m-bridge:#111;--m-label:#4a4a44;--m-route:#111111;--m-prog:#ffcc00;--m-case:#111111;--display:"Archivo","Arial Black",Arial,sans-serif;--body:"Archivo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--h1-style:normal;--h1-case:none;--h1-track:-.03em;--h1-weight:900}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.5}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.notice{margin:0;padding:8px 20px;background:#ffc107;color:#15110f;font-size:13px;font-weight:600;text-align:center}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:20px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px 20px;flex-wrap:wrap;padding:14px 20px;background:var(--hero);color:var(--hero-ink)}
+.mark{font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);font-size:22px;text-decoration:none}
+nav{display:flex;gap:16px;font-size:15px;flex-wrap:wrap}
+.hero{position:relative;background:var(--hero);color:var(--hero-ink);overflow:hidden}
+.art{position:absolute;left:0;right:0;bottom:34px;width:100%;height:clamp(110px,22vw,220px);display:block}
+.hero-in{position:relative;padding-block:clamp(28px,6vw,72px) clamp(96px,16vw,170px)}
+.crew{margin:0 0 6px;font-weight:700;font-size:16px}
+[data-city="london"] .crew{color:var(--accent2)}
+[data-city="nyc"] .crew{display:inline-block;background:var(--accent);color:var(--on-accent);padding:2px 10px}
+[data-city="nyc"] .hero{border-top:4px solid #fff}
+[data-city="la"] .crew{color:#fff}
+h1{margin:0 0 14px;font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);letter-spacing:var(--h1-track);font-size:clamp(60px,15vw,190px);line-height:.86;text-wrap:balance}
+[data-city="nyc"] h1{font-stretch:118%;font-size:clamp(50px,12.5vw,160px)}
+[data-city="la"] h1{text-shadow:.04em .04em 0 #fff}
+.headline{margin:0;font-size:clamp(20px,2.6vw,28px);font-weight:600;max-width:26ch}
+.vibe{margin:8px 0 0;font-size:16px;opacity:.85}
+.lanes{position:relative;display:grid;grid-template-columns:repeat(8,1fr);background:var(--accent);color:var(--on-accent);border-top:3px solid var(--hero-ink)}
+.lanes span{font-family:var(--display);font-weight:700;font-size:15px;padding:4px 10px;border-left:2px solid var(--on-accent)}
+.lanes span:first-child{border-left:0}
+main{display:flex;flex-direction:column;gap:clamp(40px,6vw,72px);padding-block:28px 56px}
+h2{margin:0 0 12px;font-family:var(--display);font-weight:var(--h1-weight);font-style:var(--h1-style);text-transform:var(--h1-case);letter-spacing:var(--h1-track);font-size:clamp(34px,5vw,56px);line-height:.95}
+h3{margin:0 0 8px;font-size:18px}
+.sub{margin:0 0 14px;color:var(--muted)}
+.board{margin:0;display:flex;flex-wrap:wrap;gap:2px;background:var(--line);border:2px solid var(--line)}
+.board div{flex:1 1 140px;background:var(--panel);padding:12px 14px;min-width:0}
+dt{font-size:13px;color:var(--muted)}
+dd{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(26px,3.4vw,38px);line-height:1.05;font-variant-numeric:tabular-nums}
+.board.small dd{font-size:26px}
+.run-head{display:flex;justify-content:space-between;align-items:end;gap:12px 24px;flex-wrap:wrap;margin-bottom:14px}
+.run-head h2{margin:0}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{padding:9px 14px;font-weight:700;font-size:15px;background:var(--panel);border:2px solid var(--line);border-radius:999px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.run-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:940px){.run-grid{grid-template-columns:minmax(0,1.7fr) minmax(0,1fr)}.stepcol{display:flex;flex-direction:column;max-height:calc(clamp(380px,64vh,660px) + 150px)}.steps{overflow-y:auto;flex:1}}
+.mapbox{position:relative;height:clamp(380px,64vh,660px);border:2px solid var(--line);background:var(--m-land);overflow:hidden}
+#map{display:block;width:100%;height:100%;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.drag{cursor:grabbing}
+.land{fill:var(--m-land)}.water{fill:var(--m-water)}.park{fill:var(--m-park)}.lawn{fill:var(--m-lawn)}.beach{fill:var(--m-beach)}
+.street,.road,.bridge,.pier{fill:none;stroke:var(--m-street);stroke-linecap:round}
+.road{stroke-dasharray:none;opacity:.7}.bridge,.pier{stroke:var(--m-bridge)}
+.glabel text{fill:var(--m-label);font-family:var(--body);font-size:13px;font-weight:600;paint-order:stroke;stroke:var(--m-land);stroke-width:3px}
+.glabel.major text{font-size:14px;font-weight:700;letter-spacing:.04em}
+.glabel.water-l text{font-style:italic;stroke:var(--m-water)}
+.far .glabel.minor,.far .pin text,.far .mile{display:none}
+.rt{fill:none;stroke-linejoin:round;stroke-linecap:round}
+.rt.ghost{stroke:var(--m-route);opacity:.35}
+.rt.casing{stroke:var(--m-case)}.rt.base{stroke:var(--m-route)}.rt.prog{stroke:var(--m-prog)}
+[data-city="london"] .rt.base{stroke:#8ea3c6}
+.mile circle{fill:var(--panel);stroke:var(--m-route);stroke-width:2}
+.mile text{font-family:var(--display);font-size:11px;font-weight:700;fill:var(--ink);text-anchor:middle}
+.pin{cursor:pointer}
+.pin circle{fill:var(--accent2);stroke:#fff;stroke-width:2.5}
+.pin.on circle{fill:var(--accent)}
+.pin text{font-family:var(--body);font-size:12.5px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--m-land);stroke-width:3.5px}
+.pin.on text{display:block!important}
+.startmk rect{fill:var(--ink)}.startmk text{fill:var(--bg);font-family:var(--display);font-size:10px;font-weight:700;text-anchor:middle}
+.runner .halo{fill:var(--m-prog);opacity:.3;animation:pulse 1.4s ease-out infinite}
+.runner .dot{fill:var(--m-prog);stroke:#fff;stroke-width:3}
+@keyframes pulse{from{transform:scale(.6);opacity:.5}to{transform:scale(1.7);opacity:0}}
+.zoom{position:absolute;top:10px;right:10px;display:flex;flex-direction:column;gap:4px}
+.zoom button{width:40px;height:40px;font-size:22px;line-height:1;font-weight:700;background:var(--panel);border:2px solid var(--line);color:var(--ink)}
+.card{position:absolute;left:10px;right:10px;bottom:10px;max-width:420px;background:var(--panel);border:2px solid var(--ink);padding:12px 44px 12px 14px;box-shadow:6px 6px 0 var(--accent)}
+.card h3{margin:0 0 4px;font-family:var(--display);font-size:24px;line-height:1}
+.card p{margin:0 0 6px;font-size:15px}
+.card-mi{font-weight:700;color:var(--accent2);font-size:13px!important}
+.x{position:absolute;top:4px;right:4px;width:36px;height:36px;border:0;background:none;font-size:24px}
+.link{border:0;background:none;padding:0;text-decoration:underline;font-weight:700;font-size:15px}
+.player{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 14px;align-items:center;padding:12px;border:2px solid var(--line);border-top:0;background:var(--panel)}
+.hud{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}
+.hud .wide{grid-column:1/-1}
+.k{display:block;font-size:12px;color:var(--muted)}
+.v{display:block;font-family:var(--display);font-weight:700;font-size:clamp(21px,5.6vw,30px);line-height:1.05;font-variant-numeric:tabular-nums}
+.v.sm{font-size:19px}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+.btn{display:inline-block;text-align:center;padding:12px 18px;background:var(--accent);color:var(--on-accent);border:2px solid var(--accent);font-weight:800;text-decoration:none;font-size:16px}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.play{min-width:150px}
+.steps{list-style:none;margin:0;padding:0;border-top:2px solid var(--line)}
+.steps button{display:grid;grid-template-columns:62px minmax(0,1fr);gap:10px;width:100%;text-align:left;padding:10px 8px;background:none;border:0;border-bottom:1px solid var(--line);font-size:15.5px}
+.steps button:hover{background:var(--panel)}
+.steps .on{background:var(--accent);color:var(--on-accent)}
+.steps .on .mi{color:inherit}
+.mi{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums;color:var(--accent2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{padding:8px 14px;background:var(--panel);border:2px solid var(--line);border-radius:999px;font-weight:600;font-size:15px}
+.chips button[aria-pressed="true"]{background:var(--accent2);border-color:var(--accent2);color:#fff}
+.big{margin:0 0 6px;font-family:var(--display);font-weight:700;font-size:clamp(24px,3.4vw,38px);line-height:1.1;max-width:30ch}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.actions .btn{flex:1 1 200px}
+details{border-top:2px solid var(--line);padding:12px 0}
+details:last-child{border-bottom:2px solid var(--line)}
+summary{font-weight:700;font-size:18px;cursor:pointer}
+details p{margin:8px 0 0;max-width:62ch;color:var(--muted)}
+footer{padding-block:24px 48px;border-top:2px solid var(--line);font-size:14px;color:var(--muted)}
+footer p{margin:0 0 8px}
+footer a{margin-right:12px}
+@media (prefers-reduced-motion:reduce){.runner .halo{animation:none}}
+[data-city="la"] .top{background:#ff6a4d}
+</style>
+</head>
+<body>
+<p class="notice">Concept prototype for a campaign pitch. This is not an official Nike website, and the runs shown are not live events.</p>
+<header class="top"><a class="mark" href="index.html">Own The Mile</a><nav><a href="london.html">London</a><a href="new-york.html">New York</a><a href="los-angeles.html">Los Angeles</a></nav></header>
+<section class="hero">
+<svg class="art" viewBox="0 0 1200 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><rect x="0" y="110" width="36" height="60" fill="var(--sky)"/><rect x="40" y="75" width="36" height="95" fill="var(--sky)"/><rect x="80" y="100" width="36" height="70" fill="var(--sky)"/><rect x="120" y="40" width="36" height="130" fill="var(--sky)"/><rect x="160" y="82" width="36" height="88" fill="var(--sky)"/><rect x="200" y="20" width="36" height="150" fill="var(--sky)"/><rect x="240" y="94" width="36" height="76" fill="var(--sky)"/><rect x="280" y="60" width="36" height="110" fill="var(--sky)"/><rect x="320" y="106" width="36" height="64" fill="var(--sky)"/><rect x="360" y="30" width="36" height="140" fill="var(--sky)"/><rect x="400" y="78" width="36" height="92" fill="var(--sky)"/><rect x="440" y="50" width="36" height="120" fill="var(--sky)"/><rect x="480" y="112" width="36" height="58" fill="var(--sky)"/><rect x="520" y="70" width="36" height="100" fill="var(--sky)"/><rect x="560" y="10" width="36" height="160" fill="var(--sky)"/><rect x="600" y="86" width="36" height="84" fill="var(--sky)"/><rect x="640" y="98" width="36" height="72" fill="var(--sky)"/><rect x="680" y="45" width="36" height="125" fill="var(--sky)"/><rect x="720" y="74" width="36" height="96" fill="var(--sky)"/><rect x="760" y="104" width="36" height="66" fill="var(--sky)"/><rect x="800" y="25" width="36" height="145" fill="var(--sky)"/><rect x="840" y="90" width="36" height="80" fill="var(--sky)"/><rect x="880" y="62" width="36" height="108" fill="var(--sky)"/><rect x="920" y="108" width="36" height="62" fill="var(--sky)"/><rect x="960" y="36" width="36" height="134" fill="var(--sky)"/><rect x="1000" y="80" width="36" height="90" fill="var(--sky)"/><rect x="1040" y="96" width="36" height="74" fill="var(--sky)"/><rect x="1080" y="52" width="36" height="118" fill="var(--sky)"/><rect x="1120" y="102" width="36" height="68" fill="var(--sky)"/><rect x="1160" y="72" width="36" height="98" fill="var(--sky)"/></svg>
+<div class="wrap hero-in">
+<p class="crew">Nike Run Crew · Central Park</p>
+<h1>The Park Five</h1>
+<p class="headline">The park is the track. The mile is yours.</p>
+<p class="vibe">Saturday, 8 sharp. The drives are closed to cars and open to you.</p>
+</div>
+<div class="lanes" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+</section>
+<main class="wrap">
+<dl class="board">
+<div><dt>Day</dt><dd>Saturdays</dd></div>
+<div><dt>Meet</dt><dd>8:00 am</dd></div>
+<div><dt>Full route</dt><dd>5.0 mi</dd></div>
+<div><dt>Short route</dt><dd>3.2 mi</dd></div>
+<div><dt>Cost</dt><dd>Free</dd></div>
+</dl>
+<section class="run">
+<div class="run-head"><h2>Run the route</h2>
+<div class="seg" role="group" aria-label="Choose a route"><button type="button" data-route="full" aria-pressed="true">The Park Five · 5.0 mi</button><button type="button" data-route="short" aria-pressed="false">Reservoir Cut · 3.2 mi</button></div></div>
+<div class="run-grid">
+<div class="mapcol">
+<div class="mapbox">
+<svg id="map" role="img" aria-label="Interactive map of the route. Drag to move, pinch or scroll to zoom."></svg>
+<div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zfit" aria-label="Show the whole route">⤢</button></div>
+<div class="card" id="card" hidden><button type="button" class="x" id="card-x" aria-label="Close">×</button><p class="card-mi" id="card-mi"></p><h3 id="card-n"></h3><p id="card-b"></p><button type="button" class="link" id="card-go">Put the runner here</button></div>
+</div>
+<div class="player">
+<button type="button" class="btn play" id="play">Start the run</button>
+<input type="range" id="scrub" min="0" max="1000" value="0" aria-label="Position along the route">
+<div class="hud"><div><span class="k">Distance</span><span class="v" id="rd-dist">0.00 mi</span></div><div><span class="k">Clock</span><span class="v" id="rd-time">0:00</span></div><div class="wide"><span class="k">Next up</span><span class="v sm" id="rd-next"></span></div></div>
+</div>
+</div>
+<div class="stepcol"><h3>Turn by turn</h3><ol class="steps" id="steps"></ol></div>
+</div>
+</section>
+<section class="pace">
+<h2>Set your pace</h2>
+<p class="sub">Slide to your easy pace. The clock on the map uses it too.</p>
+<input type="range" id="pace" min="360" max="900" step="15" value="600" aria-label="Pace in minutes per mile">
+<dl class="board small"><div><dt>Pace</dt><dd id="p-mi"></dd></div><div><dt>Per km</dt><dd id="p-km"></dd></div><div><dt>The Park Five</dt><dd id="p-full"></dd></div><div><dt>Reservoir Cut</dt><dd id="p-short"></dd></div></dl>
+</section>
+<section>
+<h2>Landmarks on the way</h2>
+<p class="sub">Tap one to find it on the map.</p>
+<div class="chips" id="chips"></div>
+</section>
+<section class="meet">
+<h2>Where we meet</h2>
+<p class="big">Engineers&#x27; Gate, E 90th St and Fifth Ave, Manhattan</p>
+<p class="sub">Saturdays, 8:00 am (run leaves 8:15 am). 15 minutes of stretching and coffee at the gate; mile test sign-up table.</p>
+<div class="actions">
+<button type="button" class="btn" id="cal">Add to my calendar</button>
+<a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=40.78446,-73.9593" target="_blank" rel="noopener">Open in Google Maps</a>
+<button type="button" class="btn alt" id="gpx">Download route (GPX)</button>
+<button type="button" class="btn alt" id="share">Share this run</button>
+</div>
+</section>
+<section class="expect">
+<h2>What to expect</h2>
+<details open><summary>Do I need to sign up?</summary><p>No. Just turn up. Logging the run in the Nike Run Club app is welcome and never required.</p></details>
+<details><summary>How fast is it?</summary><p>Every pace is welcome. A coach leads and two pacers run with the group, one at the back.</p></details>
+<details><summary>What happens after?</summary><p>We spend 15 minutes stretching and having coffee at the meeting point.</p></details>
+<details><summary>Can I try shoes?</summary><p>Yes. The Mile Test table is open after the run. Run in a pair for up to 30 days and return them worn for a full refund.</p></details>
+<details><summary>Do my miles count?</summary><p>Miles you log count towards your next Mile Pass tier.</p></details>
+<details><summary>Will there be photos?</summary><p>A photographer joins one run a month. Ask a pacer for an opt-out wristband if you'd rather not appear.</p></details>
+</section>
+</main>
+<footer class="wrap"><p>Other crews: <a href="london.html">London</a><a href="new-york.html">New York</a><a href="los-angeles.html">Los Angeles</a></p><p>Concept prototype. Not affiliated with, endorsed by or operated by Nike, Inc. Routes are drafts and have not been checked on the ground. The map is a stylised drawing, not a street map.</p></footer>
+<script>window.CITY={"key":"nyc","city":"New York City","center":[40.7803627586207,-73.96659413793104],"zoom":900,"far":4.2,"geo":{"shapes":[{"t":"poly","c":"park","pts":[[40.7644,-73.973],[40.7969,-73.9493],[40.8006,-73.9582],[40.7681,-73.9819]]},{"t":"poly","c":"lawn","pts":[[40.78266,-73.96548],[40.7828,-73.96599],[40.78281,-73.96653],[40.7827,-73.96705],[40.78247,-73.96749],[40.78215,-73.96782],[40.78177,-73.96801],[40.78137,-73.96802],[40.78097,-73.96787],[40.78064,-73.96757],[40.78039,-73.96714],[40.78025,-73.96663],[40.78024,-73.96609],[40.78035,-73.96557],[40.78058,-73.96513],[40.7809,-73.9648],[40.78128,-73.96462],[40.78168,-73.9646],[40.78208,-73.96475],[40.78241,-73.96505]]},{"t":"poly","c":"lawn","pts":[[40.77189,-73.97473],[40.77199,-73.97512],[40.77199,-73.97554],[40.77188,-73.97596],[40.77168,-73.97632],[40.7714,-73.97659],[40.77108,-73.97676],[40.77074,-73.97679],[40.77041,-73.97669],[40.77014,-73.97647],[40.76994,-73.97615],[40.76984,-73.97576],[40.76985,-73.97533],[40.76996,-73.97492],[40.77016,-73.97456],[40.77044,-73.97428],[40.77076,-73.97412],[40.7711,-73.97408],[40.77143,-73.97418],[40.7717,-73.9744]]},{"t":"poly","c":"water","pts":[[40.78965,-73.96039],[40.78994,-73.96146],[40.78997,-73.96261],[40.78972,-73.96371],[40.78923,-73.96466],[40.78854,-73.96537],[40.78773,-73.96576],[40.78686,-73.9658],[40.78602,-73.96548],[40.78531,-73.96484],[40.78477,-73.96394],[40.78448,-73.96286],[40.78446,-73.96172],[40.7847,-73.96062],[40.78519,-73.95967],[40.78588,-73.95896],[40.7867,-73.95857],[40.78757,-73.95853],[40.7884,-73.95884],[40.78912,-73.95948]]},{"t":"poly","c":"water","pts":[[40.77735,-73.97074],[40.77748,-73.97119],[40.77751,-73.97166],[40.77743,-73.9721],[40.77725,-73.97247],[40.777,-73.97274],[40.77669,-73.97288],[40.77636,-73.97288],[40.77603,-73.97273],[40.77575,-73.97245],[40.77553,-73.97207],[40.77541,-73.97163],[40.77538,-73.97116],[40.77546,-73.97072],[40.77563,-73.97034],[40.77589,-73.97007],[40.7762,-73.96993],[40.77653,-73.96994],[40.77685,-73.97009],[40.77714,-73.97036]]},{"t":"poly","c":"water","pts":[[40.79706,-73.95151],[40.79719,-73.95195],[40.79723,-73.9524],[40.79717,-73.95283],[40.79702,-73.95319],[40.7968,-73.95343],[40.79652,-73.95355],[40.79621,-73.95353],[40.79591,-73.95336],[40.79564,-73.95308],[40.79543,-73.95269],[40.7953,-73.95225],[40.79526,-73.95179],[40.79532,-73.95137],[40.79546,-73.95101],[40.79569,-73.95076],[40.79597,-73.95065],[40.79627,-73.95067],[40.79657,-73.95084],[40.79684,-73.95112]]},{"t":"line","c":"street","w":2,"pts":[[40.75487,-73.97554],[40.80362,-73.93999]]},{"t":"line","c":"street","w":2,"pts":[[40.75346,-73.97216],[40.80221,-73.93661]]},{"t":"line","c":"street","w":2,"pts":[[40.75206,-73.96878],[40.80081,-73.93323]]},{"t":"line","c":"street","w":2,"pts":[[40.76138,-73.99121],[40.81013,-73.95566]]},{"t":"line","c":"street","w":2,"pts":[[40.76279,-73.99459],[40.81154,-73.95904]]},{"t":"line","c":"street","w":2,"pts":[[40.76419,-73.99797],[40.81294,-73.96242]]},{"t":"line","c":"street","w":3,"pts":[[40.75628,-73.97893],[40.80503,-73.94337]]},{"t":"line","c":"street","w":3,"pts":[[40.75997,-73.98783],[40.80872,-73.95227]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75147,-73.96736],[40.76478,-73.99939]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75309,-73.96617],[40.76641,-73.99821]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75472,-73.96499],[40.76803,-73.99702]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75634,-73.9638],[40.76966,-73.99584]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75797,-73.96262],[40.77128,-73.99465]]},{"t":"line","c":"street","w":1.5,"pts":[[40.75959,-73.96143],[40.7644,-73.973]]},{"t":"line","c":"street","w":1.5,"pts":[[40.7681,-73.9819],[40.77291,-73.99347]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76122,-73.96025],[40.76602,-73.97181]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76972,-73.98071],[40.77453,-73.99228]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76284,-73.95906],[40.76765,-73.97063]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77135,-73.97953],[40.77616,-73.9911]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76447,-73.95788],[40.76928,-73.96944]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77297,-73.97834],[40.77778,-73.98991]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76609,-73.95669],[40.7709,-73.96826]]},{"t":"line","c":"street","w":1.5,"pts":[[40.7746,-73.97716],[40.77941,-73.98873]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76772,-73.95551],[40.77253,-73.96707]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77622,-73.97597],[40.78103,-73.98754]]},{"t":"line","c":"street","w":1.5,"pts":[[40.76934,-73.95432],[40.77415,-73.96589]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77785,-73.97479],[40.78266,-73.98636]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77097,-73.95314],[40.77578,-73.9647]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77947,-73.9736],[40.78428,-73.98517]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77259,-73.95195],[40.7774,-73.96352]]},{"t":"line","c":"street","w":1.5,"pts":[[40.7811,-73.97242],[40.78591,-73.98399]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77422,-73.95077],[40.77903,-73.96233]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78272,-73.97123],[40.78753,-73.9828]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77584,-73.94958],[40.78065,-73.96115]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78435,-73.97005],[40.78916,-73.98162]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77747,-73.9484],[40.78227,-73.95996]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78597,-73.96886],[40.79078,-73.98043]]},{"t":"line","c":"street","w":1.5,"pts":[[40.77909,-73.94721],[40.7839,-73.95878]]},{"t":"line","c":"street","w":1.5,"pts":[[40.7876,-73.96768],[40.79241,-73.97925]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78072,-73.94603],[40.78552,-73.95759]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78922,-73.96649],[40.79403,-73.97806]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78234,-73.94484],[40.78715,-73.95641]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79085,-73.96531],[40.79566,-73.97688]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78397,-73.94366],[40.78878,-73.95522]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79247,-73.96412],[40.79728,-73.97569]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78559,-73.94247],[40.7904,-73.95404]]},{"t":"line","c":"street","w":1.5,"pts":[[40.7941,-73.96294],[40.79891,-73.97451]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78722,-73.94129],[40.79203,-73.95285]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79572,-73.96175],[40.80053,-73.97332]]},{"t":"line","c":"street","w":1.5,"pts":[[40.78884,-73.9401],[40.79365,-73.95167]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79735,-73.96057],[40.80216,-73.97214]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79047,-73.93892],[40.79528,-73.95049]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79897,-73.95938],[40.80378,-73.97095]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79209,-73.93773],[40.7969,-73.9493]]},{"t":"line","c":"street","w":1.5,"pts":[[40.8006,-73.9582],[40.80541,-73.96977]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79372,-73.93654],[40.80703,-73.96858]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79534,-73.93536],[40.80866,-73.9674]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79697,-73.93417],[40.81028,-73.96621]]},{"t":"line","c":"street","w":1.5,"pts":[[40.79859,-73.93299],[40.81191,-73.96503]]},{"t":"line","c":"street","w":1.5,"pts":[[40.80022,-73.9318],[40.81353,-73.96384]]},{"t":"line","c":"road","w":2,"pts":[[40.7683,-73.97016],[40.772,-73.97906]]},{"t":"line","c":"road","w":2,"pts":[[40.7774,-73.96352],[40.7811,-73.97242]]},{"t":"line","c":"road","w":2,"pts":[[40.7813,-73.96068],[40.785,-73.96958]]},{"t":"line","c":"road","w":2,"pts":[[40.78813,-73.9557],[40.79182,-73.9646]]}],"labels":[{"t":"Fifth Ave","p":[40.77536,-73.96269],"c":"major"},{"t":"Central Park West","p":[40.78906,-73.96916],"c":"major"},{"t":"Great Lawn","p":[40.78153,-73.96631],"c":"minor"},{"t":"The Lake","p":[40.77644,-73.97141],"c":"minor water-l"},{"t":"Sheep Meadow","p":[40.77092,-73.97544],"c":"minor"},{"t":"North Woods","p":[40.79594,-73.95719],"c":"minor"},{"t":"Harlem Meer","p":[40.79624,-73.9521],"c":"minor water-l"},{"t":"Upper East Side","p":[40.77751,-73.95359],"c":"major"},{"t":"Upper West Side","p":[40.78749,-73.97762],"c":"major"}]},"routes":{"full":{"name":"The Park Five","mi":5.0,"km":8.0,"pts":[[40.78446,-73.9593,"Start: Engineers' Gate, E 90th St & Fifth Ave. Join East Drive heading north (counter-clockwise, runner lane)"],[40.78708,-73.95727,"E 94th St"],[40.78898,-73.95623,"E 97th St"],[40.79099,-73.95546,"East Meadow"],[40.79251,-73.95505,"Turn left onto the 102nd St Cross Drive"],[40.79362,-73.95691,"102nd St Cross Drive, midpoint"],[40.79436,-73.9595,"Turn left (south) onto West Drive"],[40.79336,-73.96116,"The Pool / W 100th St"],[40.79111,-73.96338,"W 96th St"],[40.78744,-73.96629,"W 90th St"],[40.78477,-73.968,"W 86th St; Reservoir on your left"],[40.78141,-73.97011,"Delacorte Theater / W 81st St"],[40.77873,-73.97182,"W 77th St; The Lake on your left"],[40.77583,-73.97452,"W 72nd St, Strawberry Fields"],[40.77293,-73.97722,"Tavern on the Green / W 67th St. Stay on West Drive"],[40.77043,-73.97834,"W 63rd St"],[40.7688,-73.97849,"Bend left near Columbus Circle onto Center Drive"],[40.76757,-73.97707,"Seventh Ave entrance"],[40.76672,-73.97502,"Sixth Ave entrance / Wollman Rink on your left"],[40.76698,-73.97309,"Bend left (north) onto East Drive near Grand Army Plaza"],[40.76904,-73.97194,"Central Park Zoo"],[40.77161,-73.97099,"The Mall / E 69th St"],[40.7738,-73.96963,"East Drive at E 72nd St. Turn left (north) on East Drive"],[40.77515,-73.96829,"Loeb Boathouse"],[40.77619,-73.96672,"Cat Hill (the climb past the cat statue)"],[40.77894,-73.96518,"Behind the Metropolitan Museum of Art"],[40.78114,-73.96335,"Obelisk (Cleopatra's Needle)"],[40.78211,-73.9616,"E 86th St"],[40.78446,-73.9593,"Finish: Engineers' Gate, E 90th St"]]},"short":{"name":"Reservoir Cut","mi":3.2,"km":5.1,"pts":[[40.78446,-73.9593,"Start: Engineers' Gate, E 90th St & Fifth Ave. Join East Drive heading north"],[40.78708,-73.95727,"E 94th St"],[40.78873,-73.95665,"Just before E 97th St, turn left onto the bridle path along the north side of the Reservoir"],[40.78956,-73.95813,"North Gate House"],[40.79032,-73.96048,"Tennis Center on your right"],[40.79101,-73.96264,"Bridle path meets West Drive"],[40.79111,-73.96338,"Turn left (south) onto West Drive at W 96th St"],[40.78744,-73.96629,"W 90th St"],[40.78477,-73.968,"W 86th St; Reservoir on your left"],[40.78141,-73.97011,"Delacorte Theater / W 81st St"],[40.77873,-73.97182,"W 77th St; The Lake on your left"],[40.77583,-73.97452,"W 72nd St, Strawberry Fields. Turn left onto the 72nd St Cross Drive"],[40.77474,-73.97241,"Bethesda Terrace"],[40.77435,-73.97096,"Bethesda Fountain overlook"],[40.7738,-73.96963,"East Drive at E 72nd St. Turn left (north) on East Drive"],[40.77515,-73.96829,"Loeb Boathouse"],[40.77619,-73.96672,"Cat Hill (the climb past the cat statue)"],[40.77894,-73.96518,"Behind the Metropolitan Museum of Art"],[40.78114,-73.96335,"Obelisk (Cleopatra's Needle)"],[40.78211,-73.9616,"E 86th St"],[40.78446,-73.9593,"Finish: Engineers' Gate, E 90th St"]]}},"landmarks":[{"n":"Engineers' Gate","p":[40.78446,-73.9593],"b":"Start and finish at East 90th Street and Fifth Avenue, the classic meeting point for New York runners."},{"n":"The Reservoir","p":[40.78721,-73.96216],"b":"A 1.58-mile cinder track circles the water. The short route cuts along its north side on the bridle path."},{"n":"The Pool","p":[40.79336,-73.96116],"b":"A quiet pond below the North Woods, just after the 102nd Street Cross Drive brings you to the west side."},{"n":"Delacorte Theater","p":[40.78141,-73.97011],"b":"The open-air home of free Shakespeare in the Park every summer."},{"n":"Strawberry Fields","p":[40.77583,-73.97452],"b":"The memorial to John Lennon. The short route turns east here across the 72nd Street Cross Drive."},{"n":"Tavern on the Green","p":[40.77293,-73.97722],"b":"The New York City Marathon finishes on West Drive right beside it."},{"n":"Wollman Rink","p":[40.76672,-73.97502],"b":"The southern end of the loop, with the Midtown skyline behind it."},{"n":"Bethesda Terrace","p":[40.77474,-73.97241],"b":"The fountain and arcade at the heart of the park, on the short route."},{"n":"Cat Hill","p":[40.77619,-73.96672],"b":"The one real climb on the way home. A bronze panther watches from the rock on your left."},{"n":"The Obelisk","p":[40.78114,-73.96335],"b":"An Egyptian obelisk behind the Metropolitan Museum of Art. Half a mile to the finish."}],"ics":"BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//Own The Mile concept//EN\r\nBEGIN:VEVENT\r\nUID:own-the-mile-nyc@concept\r\nDTSTAMP:20261004T180000Z\r\nDTSTART;TZID=America/New_York:20261010T080000\r\nDURATION:PT1H30M\r\nRRULE:FREQ=WEEKLY;BYDAY=SA\r\nSUMMARY:Own The Mile: The Park Five (concept)\r\nLOCATION:Engineers' Gate\\, E 90th St and Fifth Ave\\, Manhattan\r\nDESCRIPTION:Nike Run Crew \u00b7 Central Park. Every pace welcome.\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n"};</script>
+<script>(function(){
+var D=window.CITY,NS='http://www.w3.org/2000/svg',svg=document.getElementById('map');
+function $(i){return document.getElementById(i)}
+var Cc=Math.cos(D.center[0]*Math.PI/180),K=111320;
+function P(p){return [(p[1]-D.center[1])*Cc*K,-(p[0]-D.center[0])*K]}
+function mk(n,a,par){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);par.appendChild(e);return e}
+function dstr(xy){return xy.map(function(p,i){return (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1)}).join('')}
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var gGeo=mk('g',{},svg),gRt=mk('g',{},svg),gLab=mk('g',{},svg),gMi=mk('g',{},svg),gPin=mk('g',{},svg),gRun=mk('g',{},svg);
+var widths=[],scaled=[];
+function place(g,x,y){var o={g:g,x:x,y:y};scaled.push(o);return o}
+mk('rect',{x:-60000,y:-60000,width:120000,height:120000,'class':'land'},gGeo);
+D.geo.shapes.forEach(function(s){var e=mk('path',{d:dstr(s.pts.map(P))+(s.t==='poly'?'Z':''),'class':s.c},gGeo);if(s.w)widths.push([e,s.w])});
+D.geo.labels.forEach(function(l){var p=P(l.p),g=mk('g',{'class':'glabel '+(l.c||'')},gLab);mk('text',{'text-anchor':'middle',y:4},g).textContent=l.t;place(g,p[0],p[1])});
+var R={};
+['full','short'].forEach(function(k){var r=D.routes[k],xy=r.pts.map(P),cum=[0];
+ for(var i=1;i<xy.length;i++)cum.push(cum[i-1]+Math.hypot(xy[i][0]-xy[i-1][0],xy[i][1]-xy[i-1][1]));
+ R[k]={xy:xy,cum:cum,total:cum[cum.length-1],r:r,ghost:mk('path',{d:dstr(xy),'class':'rt ghost'},gRt)}});
+var casing=mk('path',{'class':'rt casing'},gRt),base=mk('path',{'class':'rt base'},gRt),prog=mk('path',{'class':'rt prog'},gRt);
+widths.push([casing,11],[base,6],[prog,6]);
+var sp=R.full.xy[0],sg=mk('g',{'class':'startmk'},gPin);mk('rect',{x:-13,y:-30,width:26,height:16},sg);mk('text',{y:-18},sg).textContent='GO';mk('rect',{x:-1.5,y:-16,width:3,height:16},sg);place(sg,sp[0],sp[1]);
+var pins=D.landmarks.map(function(l,i){var p=P(l.p),g=mk('g',{'class':'pin'},gPin);mk('circle',{r:16,fill:'transparent',stroke:'none',style:'fill:transparent;stroke:none'},g);mk('circle',{r:8},g);mk('text',{x:13,y:4},g).textContent=l.n;place(g,p[0],p[1]);
+ g.addEventListener('click',function(){if(moved<6)select(i)});return {g:g,xy:p}});
+var rg=mk('g',{'class':'runner'},gRun);mk('circle',{r:13,'class':'halo'},rg);mk('circle',{r:8,'class':'dot'},rg);var runner=place(rg,sp[0],sp[1]);
+var active='full',d=0,playing=false,follow=false,pace=600,L=0,sel=-1,miles=[];
+var v={cx:0,cy:0,w:1000},home=null,fly=0;
+function size(){return [svg.clientWidth||600,svg.clientHeight||400]}
+function apply(){var s=size(),h=v.w*s[1]/s[0],u=v.w/s[0];svg.setAttribute('viewBox',(v.cx-v.w/2)+' '+(v.cy-h/2)+' '+v.w+' '+h);
+ widths.forEach(function(w){w[0].setAttribute('stroke-width',w[1]*u)});
+ ['full','short'].forEach(function(k){R[k].ghost.setAttribute('stroke-width',3*u);R[k].ghost.setAttribute('stroke-dasharray',(7*u)+' '+(7*u))});
+ scaled.forEach(function(o){o.g.setAttribute('transform','translate('+o.x+' '+o.y+') scale('+u+')')});
+ svg.classList.toggle('far',u>D.far)}
+function fitView(){var xy=R[active].xy,xs=xy.map(function(p){return p[0]}),ys=xy.map(function(p){return p[1]}),s=size();
+ var x0=Math.min.apply(0,xs),x1=Math.max.apply(0,xs),y0=Math.min.apply(0,ys),y1=Math.max.apply(0,ys);
+ return {cx:(x0+x1)/2,cy:(y0+y1)/2,w:Math.max((x1-x0),(y1-y0)*s[0]/s[1])*1.3}}
+function clampW(w){var max=(home?home.w:20000)*2.2;return Math.max(160,Math.min(max,w))}
+function flyTo(t,ms){var id=++fly,a={cx:v.cx,cy:v.cy,w:v.w},t0=performance.now();t.w=clampW(t.w);
+ if(reduce||!ms){v=t;apply();return}
+ (function step(now){if(id!==fly)return;var q=Math.min(1,(now-t0)/ms),e=q<.5?2*q*q:1-Math.pow(-2*q+2,2)/2;
+  v={cx:a.cx+(t.cx-a.cx)*e,cy:a.cy+(t.cy-a.cy)*e,w:a.w+(t.w-a.w)*e};apply();if(q<1)requestAnimationFrame(step)})(t0)}
+function pointAt(k,dist){var r=R[k],c=r.cum,i=1;dist=Math.max(0,Math.min(r.total,dist));while(i<c.length-1&&c[i]<dist)i++;
+ var seg=c[i]-c[i-1]||1,f=(dist-c[i-1])/seg,a=r.xy[i-1],b=r.xy[i];return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f]}
+function miOf(dist){return dist/R[active].total*R[active].r.mi}
+function nearest(k,p){var r=R[k],best=1e12,bd=0;for(var i=1;i<r.xy.length;i++){var a=r.xy[i-1],b=r.xy[i],dx=b[0]-a[0],dy=b[1]-a[1],l2=dx*dx+dy*dy||1,
+ t=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/l2)),q=[a[0]+dx*t,a[1]+dy*t],dd=Math.hypot(p[0]-q[0],p[1]-q[1]);
+ if(dd<best-1){best=dd;bd=r.cum[i-1]+Math.sqrt(l2)*t}}return {off:best,d:bd}}
+function clock(sec){sec=Math.round(sec);var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return (h?h+':'+(m<10?'0':''):'')+m+':'+(s<10?'0':'')+s}
+var stepEls=[],lmPos=[];
+function setRoute(k){active=k;var r=R[k],ds=dstr(r.xy);[casing,base,prog].forEach(function(e){e.setAttribute('d',ds)});
+ L=prog.getTotalLength();prog.setAttribute('stroke-dasharray',L+' '+L);
+ document.querySelectorAll('.seg button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.route===k))});
+ miles.forEach(function(o){gMi.removeChild(o.g);scaled.splice(scaled.indexOf(o),1)});miles=[];
+ for(var m=1;m<r.r.mi-0.15;m++){var p=pointAt(k,m/r.r.mi*r.total),g=mk('g',{'class':'mile'},gMi);mk('circle',{r:9},g);mk('text',{y:4},g).textContent=m;miles.push(place(g,p[0],p[1]))}
+ var ol=$('steps');ol.innerHTML='';stepEls=r.r.pts.map(function(pt,i){var li=document.createElement('li'),b=document.createElement('button');b.type='button';
+  b.innerHTML='<span class="mi"></span><span></span>';b.firstChild.textContent=miOf(r.cum[i]).toFixed(1)+' mi';b.lastChild.textContent=pt[2];
+  b.addEventListener('click',function(){pause();d=r.cum[i];follow=false;update();flyTo({cx:r.xy[i][0],cy:r.xy[i][1],w:D.zoom},500)});li.appendChild(b);ol.appendChild(li);return b});
+ lmPos=pins.map(function(pn){return nearest(k,pn.xy)});
+ d=0;pause();home=fitView();flyTo({cx:home.cx,cy:home.cy,w:home.w},400);update();paceOut()}
+var lastStep=-1;
+function update(){var r=R[active],p=pointAt(active,d);runner.x=p[0];runner.y=p[1];
+ prog.setAttribute('stroke-dashoffset',L*(1-d/r.total));
+ $('scrub').value=Math.round(d/r.total*1000);
+ var mi=miOf(d);$('rd-dist').textContent=mi.toFixed(2)+' mi · '+(mi*1.609344).toFixed(1)+' km';$('rd-time').textContent=clock(mi*pace);
+ var nx=null;lmPos.forEach(function(o,i){if(o.off<260&&o.d>d+5&&(!nx||o.d<lmPos[nx].d))nx=i});
+ $('rd-next').textContent=d>=r.total-1?'Finished. Coffee is on the crew.':nx===null?'The finish, '+(r.r.mi-mi).toFixed(1)+' mi to go':D.landmarks[nx].n+' in '+(miOf(lmPos[nx].d)-mi).toFixed(1)+' mi';
+ var si=0;for(var i=0;i<r.cum.length;i++)if(r.cum[i]<=d+1)si=i;
+ if(si!==lastStep){stepEls.forEach(function(b,i){b.classList.toggle('on',i===si)});lastStep=si;var b=stepEls[si],ol=$('steps');
+  if(b&&ol.scrollHeight>ol.clientHeight+4)ol.scrollTop=b.offsetTop-ol.offsetTop-ol.clientHeight/3}
+ if(follow){v.cx+=(p[0]-v.cx)*(reduce?1:.14);v.cy+=(p[1]-v.cy)*(reduce?1:.14)}
+ apply()}
+var lastT=0,DUR=48;
+function tick(now){if(!playing)return;var dt=Math.min(.1,(now-lastT)/1000);lastT=now;d+=R[active].total/DUR*dt;
+ if(d>=R[active].total){d=R[active].total;playing=false;follow=false;$('play').textContent='Run it again';update();flyTo({cx:home.cx,cy:home.cy,w:home.w},900);return}
+ update();requestAnimationFrame(tick)}
+function pause(){playing=false;lastStep=-1;$('play').textContent=d>0&&d<R[active].total?'Keep running':'Start the run'}
+$('play').addEventListener('click',function(){if(playing){pause();return}if(d>=R[active].total-1)d=0;playing=true;follow=true;$('play').textContent='Pause';
+ var p=pointAt(active,d);fly++;v.w=clampW(Math.min(home.w,D.zoom*1.5));v.cx=p[0];v.cy=p[1];lastT=performance.now();requestAnimationFrame(tick)});
+$('scrub').addEventListener('input',function(){pause();d=this.value/1000*R[active].total;follow=true;fly++;update();follow=false;pause()});
+document.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){closeCard();setRoute(b.dataset.route)})});
+function select(i){sel=i;var l=D.landmarks[i],o=lmPos[i];pins.forEach(function(p,j){p.g.classList.toggle('on',j===i)});
+ document.querySelectorAll('#chips button').forEach(function(b,j){b.setAttribute('aria-pressed',String(j===i))});
+ $('card-n').textContent=l.n;$('card-b').textContent=l.b;$('card-mi').textContent=o.off<260?'Mile '+miOf(o.d).toFixed(1)+' of '+R[active].r.name:'Not on this route. Switch routes to run past it.';
+ $('card-go').hidden=o.off>=260;$('card').hidden=false;follow=false;flyTo({cx:pins[i].xy[0],cy:pins[i].xy[1]+v.w*0,w:D.zoom},600)}
+function closeCard(){sel=-1;$('card').hidden=true;pins.forEach(function(p){p.g.classList.remove('on')});document.querySelectorAll('#chips button').forEach(function(b){b.setAttribute('aria-pressed','false')})}
+$('card-x').addEventListener('click',closeCard);
+$('card-go').addEventListener('click',function(){if(sel<0)return;pause();d=lmPos[sel].d;update();pause()});
+D.landmarks.forEach(function(l,i){var b=document.createElement('button');b.type='button';b.textContent=l.n;b.setAttribute('aria-pressed','false');
+ b.addEventListener('click',function(){select(i);var box=document.querySelector('.mapbox').getBoundingClientRect();if(box.top<0||box.bottom>innerHeight)document.querySelector('.run').scrollIntoView({behavior:reduce?'auto':'smooth'})});$('chips').appendChild(b)});
+function zoomAt(f,cx,cy){var s=size(),b=svg.getBoundingClientRect(),u=v.w/s[0],h=v.w*s[1]/s[0],wx=v.cx-v.w/2+(cx-b.left)*u,wy=v.cy-h/2+(cy-b.top)*u,nw=clampW(v.w*f),k=nw/v.w;
+ v={cx:wx+(v.cx-wx)*k,cy:wy+(v.cy-wy)*k,w:nw};apply()}
+function mid(){var b=svg.getBoundingClientRect();return [b.left+b.width/2,b.top+b.height/2]}
+$('zin').addEventListener('click',function(){fly++;var m=mid();zoomAt(.6,m[0],m[1])});
+$('zout').addEventListener('click',function(){fly++;var m=mid();zoomAt(1/.6,m[0],m[1])});
+$('zfit').addEventListener('click',function(){follow=false;home=fitView();flyTo({cx:home.cx,cy:home.cy,w:home.w},500)});
+svg.addEventListener('wheel',function(e){e.preventDefault();fly++;follow=false;zoomAt(Math.exp(e.deltaY*.0016),e.clientX,e.clientY)},{passive:false});
+var ptr={},moved=0,pd=0;
+function count(){return Object.keys(ptr).length}
+svg.addEventListener('pointerdown',function(e){ptr[e.pointerId]=[e.clientX,e.clientY];moved=0;fly++;svg.classList.add('drag');pd=0});
+window.addEventListener('pointermove',function(e){if(!ptr[e.pointerId])return;var o=ptr[e.pointerId],dx=e.clientX-o[0],dy=e.clientY-o[1],u=v.w/size()[0];
+ if(count()===1){moved+=Math.abs(dx)+Math.abs(dy);if(moved>=6)follow=false;v.cx-=dx*u;v.cy-=dy*u;ptr[e.pointerId]=[e.clientX,e.clientY];apply()}
+ else{ptr[e.pointerId]=[e.clientX,e.clientY];var k=Object.keys(ptr),a=ptr[k[0]],b=ptr[k[1]],dist=Math.hypot(a[0]-b[0],a[1]-b[1]);follow=false;moved=99;
+  if(pd)zoomAt(pd/dist,(a[0]+b[0])/2,(a[1]+b[1])/2);pd=dist}});
+function up(e){delete ptr[e.pointerId];pd=0;if(!count())svg.classList.remove('drag')}
+window.addEventListener('pointerup',up);window.addEventListener('pointercancel',up);
+window.addEventListener('resize',function(){home=fitView();apply()});
+function paceOut(){$('p-mi').textContent=clock(pace)+' /mi';$('p-km').textContent=clock(pace/1.609344)+' /km';$('p-full').textContent=clock(pace*D.routes.full.mi);$('p-short').textContent=clock(pace*D.routes.short.mi)}
+$('pace').addEventListener('input',function(){pace=+this.value;paceOut();update()});
+function save(name,type,text){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},2000)}
+$('cal').addEventListener('click',function(){save('own-the-mile-'+D.key+'.ics','text/calendar',D.ics)});
+$('gpx').addEventListener('click',function(){var r=D.routes[active],x='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Own The Mile concept" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><desc>Draft route. Check it on the ground before you rely on it.</desc></metadata>\n<trk><name>'+r.name.replace(/&/g,'&amp;')+'</name><trkseg>\n'+r.pts.map(function(p){return '<trkpt lat="'+p[0]+'" lon="'+p[1]+'"/>'}).join('\n')+'\n</trkseg></trk></gpx>\n';
+ save('own-the-mile-'+D.key+'-'+active+'.gpx','application/gpx+xml',x)});
+$('share').addEventListener('click',function(){var b=this,t=b.textContent,url=location.href;function done(m){b.textContent=m;setTimeout(function(){b.textContent=t},1800)}
+ if(navigator.share){navigator.share({title:document.title,url:url}).catch(function(){})}
+ else if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){done('Link copied')},function(){done('Copy the address bar link')})}
+ else done('Copy the address bar link')});
+setRoute('full');
+})();
+</script>
+</body>
+</html>
