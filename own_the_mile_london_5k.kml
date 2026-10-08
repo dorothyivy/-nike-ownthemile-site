@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/22.2">
+<Document>
+<name>London: Bridge to Bridge 5K (3.1 mi)</name>
+<description>DRAFT route. Not an official Nike route. Check it on the ground before you rely on it.</description>
+<Style id="route"><LineStyle><color>ff2b39c0</color><width>5</width></LineStyle></Style>
+<Placemark><name>London: Bridge to Bridge 5K (3.1 mi)</name><styleUrl>#route</styleUrl>
+<LineString><tessellate>1</tessellate><coordinates>-0.0985,51.5081,0 -0.1043,51.5083,0 -0.1085,51.5084,0 -0.1105,51.508,0 -0.114,51.5075,0 -0.116,51.5068,0 -0.119,51.506,0 -0.1196,51.5033,0 -0.1195,51.502,0 -0.1196,51.5008,0 -0.1238,51.501,0 -0.1236,51.502,0 -0.122,51.507,0 -0.1203,51.5085,0 -0.1175,51.51,0 -0.114,51.5108,0 -0.1045,51.511,0 -0.0985,51.5102,0 -0.0985,51.5092,0 -0.0985,51.5081,0</coordinates></LineString></Placemark>
+<Folder><name>Landmarks</name>
+<Placemark><name>1. Tate Modern</name><description>Start and finish. The old Bankside Power Station, now a free modern art museum. The crew meets on the riverside terrace.</description><Point><coordinates>-0.0985,51.5081,0</coordinates></Point></Placemark>
+<Placemark><name>2. London Eye</name><description>The 135-metre observation wheel. The path narrows here, so run single file past the queue.</description><Point><coordinates>-0.1196,51.5033,0</coordinates></Point></Placemark>
+<Placemark><name>3. Westminster Bridge</name><description>The first crossing. Big Ben and the Houses of Parliament are straight ahead as you run over.</description><Point><coordinates>-0.1217,51.5009,0</coordinates></Point></Placemark>
+<Placemark><name>4. Cleopatra&#x27;s Needle</name><description>An ancient Egyptian obelisk on Victoria Embankment, guarded by two bronze sphinxes.</description><Point><coordinates>-0.1203,51.5085,0</coordinates></Point></Placemark>
+<Placemark><name>5. Somerset House</name><description>The long neoclassical river front above the Embankment. Roughly the halfway point of the 5K.</description><Point><coordinates>-0.114,51.5108,0</coordinates></Point></Placemark>
+<Placemark><name>6. Millennium Bridge</name><description>The 5K turns onto this footbridge and runs straight back to Tate Modern. St Paul&#x27;s dome is right behind you.</description><Point><coordinates>-0.0985,51.5102,0</coordinates></Point></Placemark>
+<Placemark><name>7. Tower of London</name><description>Nearly a thousand years old. The riverside walk runs between the fortress wall and the Thames.</description><Point><coordinates>-0.079,51.5076,0</coordinates></Point></Placemark>
+<Placemark><name>8. Tower Bridge</name><description>The far turn. Climb the steps, cross between the towers and drop down to the south bank.</description><Point><coordinates>-0.0755,51.5056,0</coordinates></Point></Placemark>
+<Placemark><name>9. HMS Belfast</name><description>A Second World War cruiser moored on the south bank, now a museum ship.</description><Point><coordinates>-0.0815,51.5063,0</coordinates></Point></Placemark>
+<Placemark><name>10. Borough Market</name><description>One of London&#x27;s oldest food markets. The last mile starts here.</description><Point><coordinates>-0.0898,51.5062,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Turn by turn</name>
+<Placemark><name>Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head we</name><description>Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head west on the Thames Path (river on your right)</description><Point><coordinates>-0.0985,51.5081,0</coordinates></Point></Placemark>
+<Placemark><name>Pass under Blackfriars Bridge</name><description>Pass under Blackfriars Bridge</description><Point><coordinates>-0.1043,51.5083,0</coordinates></Point></Placemark>
+<Placemark><name>OXO Tower Wharf</name><description>OXO Tower Wharf</description><Point><coordinates>-0.1085,51.5084,0</coordinates></Point></Placemark>
+<Placemark><name>Gabriel&#x27;s Wharf</name><description>Gabriel&#x27;s Wharf</description><Point><coordinates>-0.1105,51.508,0</coordinates></Point></Placemark>
+<Placemark><name>National Theatre</name><description>National Theatre</description><Point><coordinates>-0.114,51.5075,0</coordinates></Point></Placemark>
+<Placemark><name>Pass under Waterloo Bridge (BFI Southbank)</name><description>Pass under Waterloo Bridge (BFI Southbank)</description><Point><coordinates>-0.116,51.5068,0</coordinates></Point></Placemark>
+<Placemark><name>Royal Festival Hall; pass under Golden Jubilee Bridges</name><description>Royal Festival Hall; pass under Golden Jubilee Bridges</description><Point><coordinates>-0.119,51.506,0</coordinates></Point></Placemark>
+<Placemark><name>London Eye</name><description>London Eye</description><Point><coordinates>-0.1196,51.5033,0</coordinates></Point></Placemark>
+<Placemark><name>County Hall</name><description>County Hall</description><Point><coordinates>-0.1195,51.502,0</coordinates></Point></Placemark>
+<Placemark><name>Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben</name><description>Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben</description><Point><coordinates>-0.1196,51.5008,0</coordinates></Point></Placemark>
+<Placemark><name>North end of Westminster Bridge. Turn right onto Victoria Embankment (river on y</name><description>North end of Westminster Bridge. Turn right onto Victoria Embankment (river on your right)</description><Point><coordinates>-0.1238,51.501,0</coordinates></Point></Placemark>
+<Placemark><name>Westminster Pier</name><description>Westminster Pier</description><Point><coordinates>-0.1236,51.502,0</coordinates></Point></Placemark>
+<Placemark><name>Embankment station / Golden Jubilee Bridges</name><description>Embankment station / Golden Jubilee Bridges</description><Point><coordinates>-0.122,51.507,0</coordinates></Point></Placemark>
+<Placemark><name>Cleopatra&#x27;s Needle</name><description>Cleopatra&#x27;s Needle</description><Point><coordinates>-0.1203,51.5085,0</coordinates></Point></Placemark>
+<Placemark><name>Pass under Waterloo Bridge</name><description>Pass under Waterloo Bridge</description><Point><coordinates>-0.1175,51.51,0</coordinates></Point></Placemark>
+<Placemark><name>Temple / Somerset House</name><description>Temple / Somerset House</description><Point><coordinates>-0.114,51.5108,0</coordinates></Point></Placemark>
+<Placemark><name>Blackfriars Bridge underpass. Continue east on Paul&#x27;s Walk</name><description>Blackfriars Bridge underpass. Continue east on Paul&#x27;s Walk</description><Point><coordinates>-0.1045,51.511,0</coordinates></Point></Placemark>
+<Placemark><name>North end of Millennium Bridge (St Paul&#x27;s on your left). Turn right onto the bri</name><description>North end of Millennium Bridge (St Paul&#x27;s on your left). Turn right onto the bridge</description><Point><coordinates>-0.0985,51.5102,0</coordinates></Point></Placemark>
+<Placemark><name>Cross Millennium Bridge heading south</name><description>Cross Millennium Bridge heading south</description><Point><coordinates>-0.0985,51.5092,0</coordinates></Point></Placemark>
+<Placemark><name>Finish: Tate Modern riverside terrace</name><description>Finish: Tate Modern riverside terrace</description><Point><coordinates>-0.0985,51.5081,0</coordinates></Point></Placemark>
+</Folder>
+</Document>
+</kml>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/22.2">
+<Document>
+<name>Los Angeles: Pier to Pier (5.4 mi)</name>
+<description>DRAFT route. Not an official Nike route. Check it on the ground before you rely on it.</description>
+<Style id="route"><LineStyle><color>ff2b39c0</color><width>5</width></LineStyle></Style>
+<Placemark><name>Los Angeles: Pier to Pier (5.4 mi)</name><styleUrl>#route</styleUrl>
+<LineString><tessellate>1</tessellate><coordinates>-118.4965,34.01,0 -118.4945,34.008,0 -118.4915,34.005,0 -118.4885,34.002,0 -118.486,33.9995,0 -118.484,33.9975,0 -118.4815,33.995,0 -118.48,33.9935,0 -118.477,33.9905,0 -118.4733,33.987,0 -118.4725,33.9855,0 -118.471,33.9825,0 -118.4685,33.9785,0 -118.471,33.9825,0 -118.4725,33.9855,0 -118.4733,33.987,0 -118.477,33.9905,0 -118.48,33.9935,0 -118.4815,33.995,0 -118.484,33.9975,0 -118.486,33.9995,0 -118.4885,34.002,0 -118.4915,34.005,0 -118.4945,34.008,0 -118.4965,34.01,0</coordinates></LineString></Placemark>
+<Folder><name>Landmarks</name>
+<Placemark><name>1. Santa Monica Pier</name><description>Start and finish. Home of the Ferris wheel and the sign marking the end of Route 66.</description><Point><coordinates>-118.4965,34.01,0</coordinates></Point></Placemark>
+<Placemark><name>2. Original Muscle Beach</name><description>Rings, ropes and bars on the sand, where the beach fitness scene began in the 1930s.</description><Point><coordinates>-118.4945,34.008,0</coordinates></Point></Placemark>
+<Placemark><name>3. Crescent Bay Park</name><description>A small bluff-top park. The beach is at its widest here.</description><Point><coordinates>-118.4885,34.002,0</coordinates></Point></Placemark>
+<Placemark><name>4. Ocean Park</name><description>The last stretch of Santa Monica before the path crosses into Venice.</description><Point><coordinates>-118.486,33.9995,0</coordinates></Point></Placemark>
+<Placemark><name>5. Rose Avenue</name><description>The Venice Boardwalk starts here. The short route turns around at this point.</description><Point><coordinates>-118.48,33.9935,0</coordinates></Point></Placemark>
+<Placemark><name>6. Windward Plaza</name><description>The centre of Venice Beach: the skatepark is on your right and the Venice sign hangs over Windward Avenue.</description><Point><coordinates>-118.4733,33.987,0</coordinates></Point></Placemark>
+<Placemark><name>7. Muscle Beach Venice</name><description>The outdoor weight pen that made Venice famous.</description><Point><coordinates>-118.4725,33.9855,0</coordinates></Point></Placemark>
+<Placemark><name>8. Venice Fishing Pier</name><description>The turnaround. Touch the pier and head home with the mountains ahead of you.</description><Point><coordinates>-118.4685,33.9785,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Turn by turn</name>
+<Placemark><name>Start: Santa Monica Pier, beach path on the south side of the pier. Head south o</name><description>Start: Santa Monica Pier, beach path on the south side of the pier. Head south on the Marvin Braude beach path (ocean on your right)</description><Point><coordinates>-118.4965,34.01,0</coordinates></Point></Placemark>
+<Placemark><name>Original Muscle Beach</name><description>Original Muscle Beach</description><Point><coordinates>-118.4945,34.008,0</coordinates></Point></Placemark>
+<Placemark><name>Bay Street beach</name><description>Bay Street beach</description><Point><coordinates>-118.4915,34.005,0</coordinates></Point></Placemark>
+<Placemark><name>Pico-Kenter / Crescent Bay Park</name><description>Pico-Kenter / Crescent Bay Park</description><Point><coordinates>-118.4885,34.002,0</coordinates></Point></Placemark>
+<Placemark><name>Ocean Park Blvd</name><description>Ocean Park Blvd</description><Point><coordinates>-118.486,33.9995,0</coordinates></Point></Placemark>
+<Placemark><name>Ashland Ave</name><description>Ashland Ave</description><Point><coordinates>-118.484,33.9975,0</coordinates></Point></Placemark>
+<Placemark><name>Navy St (Santa Monica / Venice line)</name><description>Navy St (Santa Monica / Venice line)</description><Point><coordinates>-118.4815,33.995,0</coordinates></Point></Placemark>
+<Placemark><name>Rose Ave, start of the Venice Boardwalk</name><description>Rose Ave, start of the Venice Boardwalk</description><Point><coordinates>-118.48,33.9935,0</coordinates></Point></Placemark>
+<Placemark><name>Brooks Ave</name><description>Brooks Ave</description><Point><coordinates>-118.477,33.9905,0</coordinates></Point></Placemark>
+<Placemark><name>Windward Plaza / Venice Skatepark</name><description>Windward Plaza / Venice Skatepark</description><Point><coordinates>-118.4733,33.987,0</coordinates></Point></Placemark>
+<Placemark><name>Muscle Beach Venice</name><description>Muscle Beach Venice</description><Point><coordinates>-118.4725,33.9855,0</coordinates></Point></Placemark>
+<Placemark><name>Venice Blvd</name><description>Venice Blvd</description><Point><coordinates>-118.471,33.9825,0</coordinates></Point></Placemark>
+<Placemark><name>Venice Fishing Pier (Washington Blvd). Turn around</name><description>Venice Fishing Pier (Washington Blvd). Turn around</description><Point><coordinates>-118.4685,33.9785,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Venice Blvd</name><description>Return: Venice Blvd</description><Point><coordinates>-118.471,33.9825,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Muscle Beach Venice</name><description>Return: Muscle Beach Venice</description><Point><coordinates>-118.4725,33.9855,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Windward Plaza / Venice Skatepark</name><description>Return: Windward Plaza / Venice Skatepark</description><Point><coordinates>-118.4733,33.987,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Brooks Ave</name><description>Return: Brooks Ave</description><Point><coordinates>-118.477,33.9905,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Rose Ave</name><description>Return: Rose Ave</description><Point><coordinates>-118.48,33.9935,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Navy St (Santa Monica / Venice line)</name><description>Return: Navy St (Santa Monica / Venice line)</description><Point><coordinates>-118.4815,33.995,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Ashland Ave</name><description>Return: Ashland Ave</description><Point><coordinates>-118.484,33.9975,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Ocean Park Blvd</name><description>Return: Ocean Park Blvd</description><Point><coordinates>-118.486,33.9995,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Pico-Kenter / Crescent Bay Park</name><description>Return: Pico-Kenter / Crescent Bay Park</description><Point><coordinates>-118.4885,34.002,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Bay Street beach</name><description>Return: Bay Street beach</description><Point><coordinates>-118.4915,34.005,0</coordinates></Point></Placemark>
+<Placemark><name>Return: Original Muscle Beach</name><description>Return: Original Muscle Beach</description><Point><coordinates>-118.4945,34.008,0</coordinates></Point></Placemark>
+<Placemark><name>Finish: Santa Monica Pier</name><description>Finish: Santa Monica Pier</description><Point><coordinates>-118.4965,34.01,0</coordinates></Point></Placemark>
+</Folder>
+</Document>
+</kml>

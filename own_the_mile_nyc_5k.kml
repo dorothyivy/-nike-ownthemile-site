@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/22.2">
+<Document>
+<name>New York City: Reservoir Cut (3.2 mi)</name>
+<description>DRAFT route. Not an official Nike route. Check it on the ground before you rely on it.</description>
+<Style id="route"><LineStyle><color>ff2b39c0</color><width>5</width></LineStyle></Style>
+<Placemark><name>New York City: Reservoir Cut (3.2 mi)</name><styleUrl>#route</styleUrl>
+<LineString><tessellate>1</tessellate><coordinates>-73.9593,40.78446,0 -73.95727,40.78708,0 -73.95665,40.78873,0 -73.95813,40.78956,0 -73.96048,40.79032,0 -73.96264,40.79101,0 -73.96338,40.79111,0 -73.96629,40.78744,0 -73.968,40.78477,0 -73.97011,40.78141,0 -73.97182,40.77873,0 -73.97452,40.77583,0 -73.97241,40.77474,0 -73.97096,40.77435,0 -73.96963,40.7738,0 -73.96829,40.77515,0 -73.96672,40.77619,0 -73.96518,40.77894,0 -73.96335,40.78114,0 -73.9616,40.78211,0 -73.9593,40.78446,0</coordinates></LineString></Placemark>
+<Folder><name>Landmarks</name>
+<Placemark><name>1. Engineers&#x27; Gate</name><description>Start and finish at East 90th Street and Fifth Avenue, the classic meeting point for New York runners.</description><Point><coordinates>-73.9593,40.78446,0</coordinates></Point></Placemark>
+<Placemark><name>2. The Reservoir</name><description>A 1.58-mile cinder track circles the water. The short route cuts along its north side on the bridle path.</description><Point><coordinates>-73.96216,40.78721,0</coordinates></Point></Placemark>
+<Placemark><name>3. The Pool</name><description>A quiet pond below the North Woods, just after the 102nd Street Cross Drive brings you to the west side.</description><Point><coordinates>-73.96116,40.79336,0</coordinates></Point></Placemark>
+<Placemark><name>4. Delacorte Theater</name><description>The open-air home of free Shakespeare in the Park every summer.</description><Point><coordinates>-73.97011,40.78141,0</coordinates></Point></Placemark>
+<Placemark><name>5. Strawberry Fields</name><description>The memorial to John Lennon. The short route turns east here across the 72nd Street Cross Drive.</description><Point><coordinates>-73.97452,40.77583,0</coordinates></Point></Placemark>
+<Placemark><name>6. Tavern on the Green</name><description>The New York City Marathon finishes on West Drive right beside it.</description><Point><coordinates>-73.97722,40.77293,0</coordinates></Point></Placemark>
+<Placemark><name>7. Wollman Rink</name><description>The southern end of the loop, with the Midtown skyline behind it.</description><Point><coordinates>-73.97502,40.76672,0</coordinates></Point></Placemark>
+<Placemark><name>8. Bethesda Terrace</name><description>The fountain and arcade at the heart of the park, on the short route.</description><Point><coordinates>-73.97241,40.77474,0</coordinates></Point></Placemark>
+<Placemark><name>9. Cat Hill</name><description>The one real climb on the way home. A bronze panther watches from the rock on your left.</description><Point><coordinates>-73.96672,40.77619,0</coordinates></Point></Placemark>
+<Placemark><name>10. The Obelisk</name><description>An Egyptian obelisk behind the Metropolitan Museum of Art. Half a mile to the finish.</description><Point><coordinates>-73.96335,40.78114,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Turn by turn</name>
+<Placemark><name>Start: Engineers&#x27; Gate, E 90th St &amp; Fifth Ave. Join East Drive heading north</name><description>Start: Engineers&#x27; Gate, E 90th St &amp; Fifth Ave. Join East Drive heading north</description><Point><coordinates>-73.9593,40.78446,0</coordinates></Point></Placemark>
+<Placemark><name>E 94th St</name><description>E 94th St</description><Point><coordinates>-73.95727,40.78708,0</coordinates></Point></Placemark>
+<Placemark><name>Just before E 97th St, turn left onto the bridle path along the north side of th</name><description>Just before E 97th St, turn left onto the bridle path along the north side of the Reservoir</description><Point><coordinates>-73.95665,40.78873,0</coordinates></Point></Placemark>
+<Placemark><name>North Gate House</name><description>North Gate House</description><Point><coordinates>-73.95813,40.78956,0</coordinates></Point></Placemark>
+<Placemark><name>Tennis Center on your right</name><description>Tennis Center on your right</description><Point><coordinates>-73.96048,40.79032,0</coordinates></Point></Placemark>
+<Placemark><name>Bridle path meets West Drive</name><description>Bridle path meets West Drive</description><Point><coordinates>-73.96264,40.79101,0</coordinates></Point></Placemark>
+<Placemark><name>Turn left (south) onto West Drive at W 96th St</name><description>Turn left (south) onto West Drive at W 96th St</description><Point><coordinates>-73.96338,40.79111,0</coordinates></Point></Placemark>
+<Placemark><name>W 90th St</name><description>W 90th St</description><Point><coordinates>-73.96629,40.78744,0</coordinates></Point></Placemark>
+<Placemark><name>W 86th St; Reservoir on your left</name><description>W 86th St; Reservoir on your left</description><Point><coordinates>-73.968,40.78477,0</coordinates></Point></Placemark>
+<Placemark><name>Delacorte Theater / W 81st St</name><description>Delacorte Theater / W 81st St</description><Point><coordinates>-73.97011,40.78141,0</coordinates></Point></Placemark>
+<Placemark><name>W 77th St; The Lake on your left</name><description>W 77th St; The Lake on your left</description><Point><coordinates>-73.97182,40.77873,0</coordinates></Point></Placemark>
+<Placemark><name>W 72nd St, Strawberry Fields. Turn left onto the 72nd St Cross Drive</name><description>W 72nd St, Strawberry Fields. Turn left onto the 72nd St Cross Drive</description><Point><coordinates>-73.97452,40.77583,0</coordinates></Point></Placemark>
+<Placemark><name>Bethesda Terrace</name><description>Bethesda Terrace</description><Point><coordinates>-73.97241,40.77474,0</coordinates></Point></Placemark>
+<Placemark><name>Bethesda Fountain overlook</name><description>Bethesda Fountain overlook</description><Point><coordinates>-73.97096,40.77435,0</coordinates></Point></Placemark>
+<Placemark><name>East Drive at E 72nd St. Turn left (north) on East Drive</name><description>East Drive at E 72nd St. Turn left (north) on East Drive</description><Point><coordinates>-73.96963,40.7738,0</coordinates></Point></Placemark>
+<Placemark><name>Loeb Boathouse</name><description>Loeb Boathouse</description><Point><coordinates>-73.96829,40.77515,0</coordinates></Point></Placemark>
+<Placemark><name>Cat Hill (the climb past the cat statue)</name><description>Cat Hill (the climb past the cat statue)</description><Point><coordinates>-73.96672,40.77619,0</coordinates></Point></Placemark>
+<Placemark><name>Behind the Metropolitan Museum of Art</name><description>Behind the Metropolitan Museum of Art</description><Point><coordinates>-73.96518,40.77894,0</coordinates></Point></Placemark>
+<Placemark><name>Obelisk (Cleopatra&#x27;s Needle)</name><description>Obelisk (Cleopatra&#x27;s Needle)</description><Point><coordinates>-73.96335,40.78114,0</coordinates></Point></Placemark>
+<Placemark><name>E 86th St</name><description>E 86th St</description><Point><coordinates>-73.9616,40.78211,0</coordinates></Point></Placemark>
+<Placemark><name>Finish: Engineers&#x27; Gate, E 90th St</name><description>Finish: Engineers&#x27; Gate, E 90th St</description><Point><coordinates>-73.9593,40.78446,0</coordinates></Point></Placemark>
+</Folder>
+</Document>
+</kml>
