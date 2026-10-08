@@ -114,7 +114,7 @@ footer p{margin:0 0 8px}
 footer a{margin-right:12px}
 @media (prefers-reduced-motion:reduce){.runner .halo{animation:none}}
 [data-city="la"] .top{background:#ff6a4d}
-</style>
+.gpxcol{flex:1 1 200px;display:flex;flex-direction:column;gap:6px}.gpxcol .btn{flex:none}.gpx-note{margin:0;font-size:13px;color:var(--muted)}</style>
 </head>
 <body>
 <p class="notice">Concept prototype for a campaign pitch. This is not an official Nike website, and the runs shown are not live events.</p>
@@ -174,7 +174,7 @@ footer a{margin-right:12px}
 <div class="actions">
 <button type="button" class="btn" id="cal">Add to my calendar</button>
 <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=51.5081,-0.0985" target="_blank" rel="noopener">Open in Google Maps</a>
-<button type="button" class="btn alt" id="gpx">Download route (GPX)</button>
+<div class="gpxcol"><a class="btn alt" id="gpx" href="own_the_mile_london_full.gpx" download="own_the_mile_london_full.gpx">Download route for a GPS app (GPX)</a><p class="gpx-note">Opens in GPS apps such as Strava, Komoot, AllTrails, Gaia GPS or Garmin Connect. It is a route file, not a web page.</p></div><a class="btn alt" id="kml" href="own_the_mile_london_full.kml" download="own_the_mile_london_full.kml">Download for Google Earth (KML)</a><a class="btn alt" href="route-map-london.html">View route map (printable)</a>
 <button type="button" class="btn alt" id="share">Share this run</button>
 </div>
 </section>
@@ -238,7 +238,7 @@ function nearest(k,p){var r=R[k],best=1e12,bd=0;for(var i=1;i<r.xy.length;i++){v
  if(dd<best-1){best=dd;bd=r.cum[i-1]+Math.sqrt(l2)*t}}return {off:best,d:bd}}
 function clock(sec){sec=Math.round(sec);var h=Math.floor(sec/3600),m=Math.floor(sec%3600/60),s=sec%60;return (h?h+':'+(m<10?'0':''):'')+m+':'+(s<10?'0':'')+s}
 var stepEls=[],lmPos=[];
-function setRoute(k){active=k;var r=R[k],ds=dstr(r.xy);[casing,base,prog].forEach(function(e){e.setAttribute('d',ds)});
+function setRoute(k){active=k;var gx=$('gpx');gx.setAttribute('href',GPX[k]);gx.setAttribute('download',GPX[k]);var KM={full:'own_the_mile_'+D.key+'_full.kml',short:'own_the_mile_'+D.key+'_5k.kml'};var kx=$('kml');kx.setAttribute('href',KM[k]);kx.setAttribute('download',KM[k]);var r=R[k],ds=dstr(r.xy);[casing,base,prog].forEach(function(e){e.setAttribute('d',ds)});
  L=prog.getTotalLength();prog.setAttribute('stroke-dasharray',L+' '+L);
  document.querySelectorAll('.seg button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.route===k))});
  miles.forEach(function(o){gMi.removeChild(o.g);scaled.splice(scaled.indexOf(o),1)});miles=[];
@@ -299,8 +299,7 @@ function paceOut(){$('p-mi').textContent=clock(pace)+' /mi';$('p-km').textConten
 $('pace').addEventListener('input',function(){pace=+this.value;paceOut();update()});
 function save(name,type,text){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type}));a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href)},2000)}
 $('cal').addEventListener('click',function(){save('own-the-mile-'+D.key+'.ics','text/calendar',D.ics)});
-$('gpx').addEventListener('click',function(){var r=D.routes[active],x='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Own The Mile concept" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><desc>Draft route. Check it on the ground before you rely on it.</desc></metadata>\n<trk><name>'+r.name.replace(/&/g,'&amp;')+'</name><trkseg>\n'+r.pts.map(function(p){return '<trkpt lat="'+p[0]+'" lon="'+p[1]+'"/>'}).join('\n')+'\n</trkseg></trk></gpx>\n';
- save('own-the-mile-'+D.key+'-'+active+'.gpx','application/gpx+xml',x)});
+var GPX={full:'own_the_mile_'+D.key+'_full.gpx',short:'own_the_mile_'+D.key+'_5k.gpx'};
 $('share').addEventListener('click',function(){var b=this,t=b.textContent,url=location.href;function done(m){b.textContent=m;setTimeout(function(){b.textContent=t},1800)}
  if(navigator.share){navigator.share({title:document.title,url:url}).catch(function(){})}
  else if(navigator.clipboard){navigator.clipboard.writeText(url).then(function(){done('Link copied')},function(){done('Copy the address bar link')})}
