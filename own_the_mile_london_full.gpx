@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Own The Mile draft route pack" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Bridge to Bridge — London (full)</name><desc>DRAFT hand-plotted route for design layout. Not an official Nike route. Verify on the ground before print.</desc></metadata>
+<wpt lat="51.5081" lon="-0.0985"><name>Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head west on the Thames Path (river on your right)</name></wpt>
+<wpt lat="51.5083" lon="-0.1043"><name>Pass under Blackfriars Bridge</name></wpt>
+<wpt lat="51.5084" lon="-0.1085"><name>OXO Tower Wharf</name></wpt>
+<wpt lat="51.508" lon="-0.1105"><name>Gabriel's Wharf</name></wpt>
+<wpt lat="51.5075" lon="-0.114"><name>National Theatre</name></wpt>
+<wpt lat="51.5068" lon="-0.116"><name>Pass under Waterloo Bridge (BFI Southbank)</name></wpt>
+<wpt lat="51.506" lon="-0.119"><name>Royal Festival Hall; pass under Golden Jubilee Bridges</name></wpt>
+<wpt lat="51.5033" lon="-0.1196"><name>London Eye</name></wpt>
+<wpt lat="51.502" lon="-0.1195"><name>County Hall</name></wpt>
+<wpt lat="51.5008" lon="-0.1196"><name>Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben</name></wpt>
+<wpt lat="51.501" lon="-0.1238"><name>North end of Westminster Bridge. Turn right onto Victoria Embankment (river on your right)</name></wpt>
+<wpt lat="51.502" lon="-0.1236"><name>Westminster Pier</name></wpt>
+<wpt lat="51.507" lon="-0.122"><name>Embankment station / Golden Jubilee Bridges</name></wpt>
+<wpt lat="51.5085" lon="-0.1203"><name>Cleopatra's Needle</name></wpt>
+<wpt lat="51.51" lon="-0.1175"><name>Pass under Waterloo Bridge</name></wpt>
+<wpt lat="51.5108" lon="-0.114"><name>Temple / Somerset House</name></wpt>
+<wpt lat="51.511" lon="-0.1045"><name>Blackfriars Bridge underpass. Continue east on Paul's Walk</name></wpt>
+<wpt lat="51.5102" lon="-0.0985"><name>North end of Millennium Bridge (St Paul's on your left). 5K runners turn right here; full route continues straight</name></wpt>
+<wpt lat="51.5096" lon="-0.094"><name>Pass under Southwark Bridge</name></wpt>
+<wpt lat="51.5092" lon="-0.0905"><name>Cannon Street rail bridge (Thames Path steps inland briefly here)</name></wpt>
+<wpt lat="51.509" lon="-0.0875"><name>Pass under London Bridge</name></wpt>
+<wpt lat="51.5087" lon="-0.084"><name>Old Billingsgate</name></wpt>
+<wpt lat="51.5076" lon="-0.079"><name>Tower of London riverside walk</name></wpt>
+<wpt lat="51.5072" lon="-0.0748"><name>Steps up to Tower Bridge. Turn right and cross the bridge</name></wpt>
+<wpt lat="51.504" lon="-0.0762"><name>South end of Tower Bridge. Turn right down to the riverside (Potters Fields Park)</name></wpt>
+<wpt lat="51.505" lon="-0.079"><name>Potters Fields / The Queen's Walk, heading west</name></wpt>
+<wpt lat="51.5063" lon="-0.0815"><name>HMS Belfast</name></wpt>
+<wpt lat="51.5062" lon="-0.084"><name>Hay's Galleria</name></wpt>
+<wpt lat="51.5064" lon="-0.088"><name>London Bridge (pass under or cross Tooley St side)</name></wpt>
+<wpt lat="51.5062" lon="-0.0898"><name>Southwark Cathedral / Borough Market</name></wpt>
+<wpt lat="51.507" lon="-0.0905"><name>Golden Hinde, Clink Street</name></wpt>
+<wpt lat="51.5077" lon="-0.094"><name>Pass under Southwark Bridge</name></wpt>
+<wpt lat="51.5081" lon="-0.097"><name>Shakespeare's Globe</name></wpt>
+<wpt lat="51.5081" lon="-0.0985"><name>Finish: Tate Modern riverside terrace</name></wpt>
+<trk><name>Bridge to Bridge — London (full)</name><trkseg>
+<trkpt lat="51.5081" lon="-0.0985"/>
+<trkpt lat="51.5083" lon="-0.1043"/>
+<trkpt lat="51.5084" lon="-0.1085"/>
+<trkpt lat="51.508" lon="-0.1105"/>
+<trkpt lat="51.5075" lon="-0.114"/>
+<trkpt lat="51.5068" lon="-0.116"/>
+<trkpt lat="51.506" lon="-0.119"/>
+<trkpt lat="51.5033" lon="-0.1196"/>
+<trkpt lat="51.502" lon="-0.1195"/>
+<trkpt lat="51.5008" lon="-0.1196"/>
+<trkpt lat="51.501" lon="-0.1238"/>
+<trkpt lat="51.502" lon="-0.1236"/>
+<trkpt lat="51.507" lon="-0.122"/>
+<trkpt lat="51.5085" lon="-0.1203"/>
+<trkpt lat="51.51" lon="-0.1175"/>
+<trkpt lat="51.5108" lon="-0.114"/>
+<trkpt lat="51.511" lon="-0.1045"/>
+<trkpt lat="51.5102" lon="-0.0985"/>
+<trkpt lat="51.5096" lon="-0.094"/>
+<trkpt lat="51.5092" lon="-0.0905"/>
+<trkpt lat="51.509" lon="-0.0875"/>
+<trkpt lat="51.5087" lon="-0.084"/>
+<trkpt lat="51.5076" lon="-0.079"/>
+<trkpt lat="51.5072" lon="-0.0748"/>
+<trkpt lat="51.504" lon="-0.0762"/>
+<trkpt lat="51.505" lon="-0.079"/>
+<trkpt lat="51.5063" lon="-0.0815"/>
+<trkpt lat="51.5062" lon="-0.084"/>
+<trkpt lat="51.5064" lon="-0.088"/>
+<trkpt lat="51.5062" lon="-0.0898"/>
+<trkpt lat="51.507" lon="-0.0905"/>
+<trkpt lat="51.5077" lon="-0.094"/>
+<trkpt lat="51.5081" lon="-0.097"/>
+<trkpt lat="51.5081" lon="-0.0985"/>
+</trkseg></trk></gpx>

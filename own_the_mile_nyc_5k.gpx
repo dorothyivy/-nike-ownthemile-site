@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Own The Mile draft route pack" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Reservoir Cut — New York (5K option)</name><desc>DRAFT hand-plotted route for design layout. Not an official Nike route. Verify on the ground before print.</desc></metadata>
+<wpt lat="40.78446" lon="-73.9593"><name>Start: Engineers' Gate, E 90th St &amp; Fifth Ave. Join East Drive heading north</name></wpt>
+<wpt lat="40.78708" lon="-73.95727"><name>E 94th St</name></wpt>
+<wpt lat="40.78873" lon="-73.95665"><name>Just before E 97th St, turn left onto the bridle path along the north side of the Reservoir</name></wpt>
+<wpt lat="40.78956" lon="-73.95813"><name>North Gate House</name></wpt>
+<wpt lat="40.79032" lon="-73.96048"><name>Tennis Center on your right</name></wpt>
+<wpt lat="40.79101" lon="-73.96264"><name>Bridle path meets West Drive</name></wpt>
+<wpt lat="40.79111" lon="-73.96338"><name>Turn left (south) onto West Drive at W 96th St</name></wpt>
+<wpt lat="40.78744" lon="-73.96629"><name>W 90th St</name></wpt>
+<wpt lat="40.78477" lon="-73.968"><name>W 86th St; Reservoir on your left</name></wpt>
+<wpt lat="40.78141" lon="-73.97011"><name>Delacorte Theater / W 81st St</name></wpt>
+<wpt lat="40.77873" lon="-73.97182"><name>W 77th St; The Lake on your left</name></wpt>
+<wpt lat="40.77583" lon="-73.97452"><name>W 72nd St, Strawberry Fields. Turn left onto the 72nd St Cross Drive</name></wpt>
+<wpt lat="40.77474" lon="-73.97241"><name>Bethesda Terrace</name></wpt>
+<wpt lat="40.77435" lon="-73.97096"><name>Bethesda Fountain overlook</name></wpt>
+<wpt lat="40.7738" lon="-73.96963"><name>East Drive at E 72nd St. Turn left (north) on East Drive</name></wpt>
+<wpt lat="40.77515" lon="-73.96829"><name>Loeb Boathouse</name></wpt>
+<wpt lat="40.77619" lon="-73.96672"><name>Cat Hill (the climb past the cat statue)</name></wpt>
+<wpt lat="40.77894" lon="-73.96518"><name>Behind the Metropolitan Museum of Art</name></wpt>
+<wpt lat="40.78114" lon="-73.96335"><name>Obelisk (Cleopatra's Needle)</name></wpt>
+<wpt lat="40.78211" lon="-73.9616"><name>E 86th St</name></wpt>
+<wpt lat="40.78446" lon="-73.9593"><name>Finish: Engineers' Gate, E 90th St</name></wpt>
+<trk><name>Reservoir Cut — New York (5K option)</name><trkseg>
+<trkpt lat="40.78446" lon="-73.9593"/>
+<trkpt lat="40.78708" lon="-73.95727"/>
+<trkpt lat="40.78873" lon="-73.95665"/>
+<trkpt lat="40.78956" lon="-73.95813"/>
+<trkpt lat="40.79032" lon="-73.96048"/>
+<trkpt lat="40.79101" lon="-73.96264"/>
+<trkpt lat="40.79111" lon="-73.96338"/>
+<trkpt lat="40.78744" lon="-73.96629"/>
+<trkpt lat="40.78477" lon="-73.968"/>
+<trkpt lat="40.78141" lon="-73.97011"/>
+<trkpt lat="40.77873" lon="-73.97182"/>
+<trkpt lat="40.77583" lon="-73.97452"/>
+<trkpt lat="40.77474" lon="-73.97241"/>
+<trkpt lat="40.77435" lon="-73.97096"/>
+<trkpt lat="40.7738" lon="-73.96963"/>
+<trkpt lat="40.77515" lon="-73.96829"/>
+<trkpt lat="40.77619" lon="-73.96672"/>
+<trkpt lat="40.77894" lon="-73.96518"/>
+<trkpt lat="40.78114" lon="-73.96335"/>
+<trkpt lat="40.78211" lon="-73.9616"/>
+<trkpt lat="40.78446" lon="-73.9593"/>
+</trkseg></trk></gpx>

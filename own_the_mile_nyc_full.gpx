@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Own The Mile draft route pack" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>The Park Five — New York (full)</name><desc>DRAFT hand-plotted route for design layout. Not an official Nike route. Verify on the ground before print.</desc></metadata>
+<wpt lat="40.78446" lon="-73.9593"><name>Start: Engineers' Gate, E 90th St &amp; Fifth Ave. Join East Drive heading north (counter-clockwise, runner lane)</name></wpt>
+<wpt lat="40.78708" lon="-73.95727"><name>E 94th St</name></wpt>
+<wpt lat="40.78898" lon="-73.95623"><name>E 97th St</name></wpt>
+<wpt lat="40.79099" lon="-73.95546"><name>East Meadow</name></wpt>
+<wpt lat="40.79251" lon="-73.95505"><name>Turn left onto the 102nd St Cross Drive</name></wpt>
+<wpt lat="40.79362" lon="-73.95691"><name>102nd St Cross Drive, midpoint</name></wpt>
+<wpt lat="40.79436" lon="-73.9595"><name>Turn left (south) onto West Drive</name></wpt>
+<wpt lat="40.79336" lon="-73.96116"><name>The Pool / W 100th St</name></wpt>
+<wpt lat="40.79111" lon="-73.96338"><name>W 96th St</name></wpt>
+<wpt lat="40.78744" lon="-73.96629"><name>W 90th St</name></wpt>
+<wpt lat="40.78477" lon="-73.968"><name>W 86th St; Reservoir on your left</name></wpt>
+<wpt lat="40.78141" lon="-73.97011"><name>Delacorte Theater / W 81st St</name></wpt>
+<wpt lat="40.77873" lon="-73.97182"><name>W 77th St; The Lake on your left</name></wpt>
+<wpt lat="40.77583" lon="-73.97452"><name>W 72nd St, Strawberry Fields</name></wpt>
+<wpt lat="40.77293" lon="-73.97722"><name>Tavern on the Green / W 67th St. Stay on West Drive</name></wpt>
+<wpt lat="40.77043" lon="-73.97834"><name>W 63rd St</name></wpt>
+<wpt lat="40.7688" lon="-73.97849"><name>Bend left near Columbus Circle onto Center Drive</name></wpt>
+<wpt lat="40.76757" lon="-73.97707"><name>Seventh Ave entrance</name></wpt>
+<wpt lat="40.76672" lon="-73.97502"><name>Sixth Ave entrance / Wollman Rink on your left</name></wpt>
+<wpt lat="40.76698" lon="-73.97309"><name>Bend left (north) onto East Drive near Grand Army Plaza</name></wpt>
+<wpt lat="40.76904" lon="-73.97194"><name>Central Park Zoo</name></wpt>
+<wpt lat="40.77161" lon="-73.97099"><name>The Mall / E 69th St</name></wpt>
+<wpt lat="40.7738" lon="-73.96963"><name>East Drive at E 72nd St. Turn left (north) on East Drive</name></wpt>
+<wpt lat="40.77515" lon="-73.96829"><name>Loeb Boathouse</name></wpt>
+<wpt lat="40.77619" lon="-73.96672"><name>Cat Hill (the climb past the cat statue)</name></wpt>
+<wpt lat="40.77894" lon="-73.96518"><name>Behind the Metropolitan Museum of Art</name></wpt>
+<wpt lat="40.78114" lon="-73.96335"><name>Obelisk (Cleopatra's Needle)</name></wpt>
+<wpt lat="40.78211" lon="-73.9616"><name>E 86th St</name></wpt>
+<wpt lat="40.78446" lon="-73.9593"><name>Finish: Engineers' Gate, E 90th St</name></wpt>
+<trk><name>The Park Five — New York (full)</name><trkseg>
+<trkpt lat="40.78446" lon="-73.9593"/>
+<trkpt lat="40.78708" lon="-73.95727"/>
+<trkpt lat="40.78898" lon="-73.95623"/>
+<trkpt lat="40.79099" lon="-73.95546"/>
+<trkpt lat="40.79251" lon="-73.95505"/>
+<trkpt lat="40.79362" lon="-73.95691"/>
+<trkpt lat="40.79436" lon="-73.9595"/>
+<trkpt lat="40.79336" lon="-73.96116"/>
+<trkpt lat="40.79111" lon="-73.96338"/>
+<trkpt lat="40.78744" lon="-73.96629"/>
+<trkpt lat="40.78477" lon="-73.968"/>
+<trkpt lat="40.78141" lon="-73.97011"/>
+<trkpt lat="40.77873" lon="-73.97182"/>
+<trkpt lat="40.77583" lon="-73.97452"/>
+<trkpt lat="40.77293" lon="-73.97722"/>
+<trkpt lat="40.77043" lon="-73.97834"/>
+<trkpt lat="40.7688" lon="-73.97849"/>
+<trkpt lat="40.76757" lon="-73.97707"/>
+<trkpt lat="40.76672" lon="-73.97502"/>
+<trkpt lat="40.76698" lon="-73.97309"/>
+<trkpt lat="40.76904" lon="-73.97194"/>
+<trkpt lat="40.77161" lon="-73.97099"/>
+<trkpt lat="40.7738" lon="-73.96963"/>
+<trkpt lat="40.77515" lon="-73.96829"/>
+<trkpt lat="40.77619" lon="-73.96672"/>
+<trkpt lat="40.77894" lon="-73.96518"/>
+<trkpt lat="40.78114" lon="-73.96335"/>
+<trkpt lat="40.78211" lon="-73.9616"/>
+<trkpt lat="40.78446" lon="-73.9593"/>
+</trkseg></trk></gpx>

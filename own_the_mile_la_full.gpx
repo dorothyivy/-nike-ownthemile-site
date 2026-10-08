@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Own The Mile draft route pack" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Pier to Pier — Los Angeles (full)</name><desc>DRAFT hand-plotted route for design layout. Not an official Nike route. Verify on the ground before print.</desc></metadata>
+<wpt lat="34.01" lon="-118.4965"><name>Start: Santa Monica Pier, beach path on the south side of the pier. Head south on the Marvin Braude beach path (ocean on your right)</name></wpt>
+<wpt lat="34.008" lon="-118.4945"><name>Original Muscle Beach</name></wpt>
+<wpt lat="34.005" lon="-118.4915"><name>Bay Street beach</name></wpt>
+<wpt lat="34.002" lon="-118.4885"><name>Pico-Kenter / Crescent Bay Park</name></wpt>
+<wpt lat="33.9995" lon="-118.486"><name>Ocean Park Blvd</name></wpt>
+<wpt lat="33.9975" lon="-118.484"><name>Ashland Ave</name></wpt>
+<wpt lat="33.995" lon="-118.4815"><name>Navy St (Santa Monica / Venice line)</name></wpt>
+<wpt lat="33.9935" lon="-118.48"><name>Rose Ave, start of the Venice Boardwalk</name></wpt>
+<wpt lat="33.9905" lon="-118.477"><name>Brooks Ave</name></wpt>
+<wpt lat="33.987" lon="-118.4733"><name>Windward Plaza / Venice Skatepark</name></wpt>
+<wpt lat="33.9855" lon="-118.4725"><name>Muscle Beach Venice</name></wpt>
+<wpt lat="33.9825" lon="-118.471"><name>Venice Blvd</name></wpt>
+<wpt lat="33.9785" lon="-118.4685"><name>Venice Fishing Pier (Washington Blvd). Turn around</name></wpt>
+<wpt lat="33.9825" lon="-118.471"><name>Return: Venice Blvd</name></wpt>
+<wpt lat="33.9855" lon="-118.4725"><name>Return: Muscle Beach Venice</name></wpt>
+<wpt lat="33.987" lon="-118.4733"><name>Return: Windward Plaza / Venice Skatepark</name></wpt>
+<wpt lat="33.9905" lon="-118.477"><name>Return: Brooks Ave</name></wpt>
+<wpt lat="33.9935" lon="-118.48"><name>Return: Rose Ave</name></wpt>
+<wpt lat="33.995" lon="-118.4815"><name>Return: Navy St (Santa Monica / Venice line)</name></wpt>
+<wpt lat="33.9975" lon="-118.484"><name>Return: Ashland Ave</name></wpt>
+<wpt lat="33.9995" lon="-118.486"><name>Return: Ocean Park Blvd</name></wpt>
+<wpt lat="34.002" lon="-118.4885"><name>Return: Pico-Kenter / Crescent Bay Park</name></wpt>
+<wpt lat="34.005" lon="-118.4915"><name>Return: Bay Street beach</name></wpt>
+<wpt lat="34.008" lon="-118.4945"><name>Return: Original Muscle Beach</name></wpt>
+<wpt lat="34.01" lon="-118.4965"><name>Finish: Santa Monica Pier</name></wpt>
+<trk><name>Pier to Pier — Los Angeles (full)</name><trkseg>
+<trkpt lat="34.01" lon="-118.4965"/>
+<trkpt lat="34.008" lon="-118.4945"/>
+<trkpt lat="34.005" lon="-118.4915"/>
+<trkpt lat="34.002" lon="-118.4885"/>
+<trkpt lat="33.9995" lon="-118.486"/>
+<trkpt lat="33.9975" lon="-118.484"/>
+<trkpt lat="33.995" lon="-118.4815"/>
+<trkpt lat="33.9935" lon="-118.48"/>
+<trkpt lat="33.9905" lon="-118.477"/>
+<trkpt lat="33.987" lon="-118.4733"/>
+<trkpt lat="33.9855" lon="-118.4725"/>
+<trkpt lat="33.9825" lon="-118.471"/>
+<trkpt lat="33.9785" lon="-118.4685"/>
+<trkpt lat="33.9825" lon="-118.471"/>
+<trkpt lat="33.9855" lon="-118.4725"/>
+<trkpt lat="33.987" lon="-118.4733"/>
+<trkpt lat="33.9905" lon="-118.477"/>
+<trkpt lat="33.9935" lon="-118.48"/>
+<trkpt lat="33.995" lon="-118.4815"/>
+<trkpt lat="33.9975" lon="-118.484"/>
+<trkpt lat="33.9995" lon="-118.486"/>
+<trkpt lat="34.002" lon="-118.4885"/>
+<trkpt lat="34.005" lon="-118.4915"/>
+<trkpt lat="34.008" lon="-118.4945"/>
+<trkpt lat="34.01" lon="-118.4965"/>
+</trkseg></trk></gpx>

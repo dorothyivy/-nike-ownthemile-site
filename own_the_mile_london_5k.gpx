@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Own The Mile draft route pack" xmlns="http://www.topografix.com/GPX/1/1">
+<metadata><name>Bridge to Bridge — London (5K option)</name><desc>DRAFT hand-plotted route for design layout. Not an official Nike route. Verify on the ground before print.</desc></metadata>
+<wpt lat="51.5081" lon="-0.0985"><name>Start: riverside terrace outside Tate Modern, foot of Millennium Bridge. Head west on the Thames Path (river on your right)</name></wpt>
+<wpt lat="51.5083" lon="-0.1043"><name>Pass under Blackfriars Bridge</name></wpt>
+<wpt lat="51.5084" lon="-0.1085"><name>OXO Tower Wharf</name></wpt>
+<wpt lat="51.508" lon="-0.1105"><name>Gabriel's Wharf</name></wpt>
+<wpt lat="51.5075" lon="-0.114"><name>National Theatre</name></wpt>
+<wpt lat="51.5068" lon="-0.116"><name>Pass under Waterloo Bridge (BFI Southbank)</name></wpt>
+<wpt lat="51.506" lon="-0.119"><name>Royal Festival Hall; pass under Golden Jubilee Bridges</name></wpt>
+<wpt lat="51.5033" lon="-0.1196"><name>London Eye</name></wpt>
+<wpt lat="51.502" lon="-0.1195"><name>County Hall</name></wpt>
+<wpt lat="51.5008" lon="-0.1196"><name>Steps up to Westminster Bridge. Turn right and cross the bridge towards Big Ben</name></wpt>
+<wpt lat="51.501" lon="-0.1238"><name>North end of Westminster Bridge. Turn right onto Victoria Embankment (river on your right)</name></wpt>
+<wpt lat="51.502" lon="-0.1236"><name>Westminster Pier</name></wpt>
+<wpt lat="51.507" lon="-0.122"><name>Embankment station / Golden Jubilee Bridges</name></wpt>
+<wpt lat="51.5085" lon="-0.1203"><name>Cleopatra's Needle</name></wpt>
+<wpt lat="51.51" lon="-0.1175"><name>Pass under Waterloo Bridge</name></wpt>
+<wpt lat="51.5108" lon="-0.114"><name>Temple / Somerset House</name></wpt>
+<wpt lat="51.511" lon="-0.1045"><name>Blackfriars Bridge underpass. Continue east on Paul's Walk</name></wpt>
+<wpt lat="51.5102" lon="-0.0985"><name>North end of Millennium Bridge (St Paul's on your left). Turn right onto the bridge</name></wpt>
+<wpt lat="51.5092" lon="-0.0985"><name>Cross Millennium Bridge heading south</name></wpt>
+<wpt lat="51.5081" lon="-0.0985"><name>Finish: Tate Modern riverside terrace</name></wpt>
+<trk><name>Bridge to Bridge — London (5K option)</name><trkseg>
+<trkpt lat="51.5081" lon="-0.0985"/>
+<trkpt lat="51.5083" lon="-0.1043"/>
+<trkpt lat="51.5084" lon="-0.1085"/>
+<trkpt lat="51.508" lon="-0.1105"/>
+<trkpt lat="51.5075" lon="-0.114"/>
+<trkpt lat="51.5068" lon="-0.116"/>
+<trkpt lat="51.506" lon="-0.119"/>
+<trkpt lat="51.5033" lon="-0.1196"/>
+<trkpt lat="51.502" lon="-0.1195"/>
+<trkpt lat="51.5008" lon="-0.1196"/>
+<trkpt lat="51.501" lon="-0.1238"/>
+<trkpt lat="51.502" lon="-0.1236"/>
+<trkpt lat="51.507" lon="-0.122"/>
+<trkpt lat="51.5085" lon="-0.1203"/>
+<trkpt lat="51.51" lon="-0.1175"/>
+<trkpt lat="51.5108" lon="-0.114"/>
+<trkpt lat="51.511" lon="-0.1045"/>
+<trkpt lat="51.5102" lon="-0.0985"/>
+<trkpt lat="51.5092" lon="-0.0985"/>
+<trkpt lat="51.5081" lon="-0.0985"/>
+</trkseg></trk></gpx>
